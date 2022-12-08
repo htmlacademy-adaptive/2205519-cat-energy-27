@@ -1,3 +1,5 @@
+@import "button-primary";
+@import "button-secondary";
 @import "main-header";
 @import "promo";
 @import "goals";
@@ -13,6 +15,13 @@
 @import "owner";
 @import "comment";
 @import "extra";
+@import "products";
+@import "field";
+@import "textarea";
+@import "control";
+@import "socials";
+@import "copyright";
+@import "main-nav";
 
 body {
   margin: 0;

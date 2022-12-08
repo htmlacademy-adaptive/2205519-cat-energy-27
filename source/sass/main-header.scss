@@ -22,37 +22,3 @@
     margin: 0 auto;
   }
 }
-.main-nav {
-
-  &__toggle {
-    display: block;
-    margin-left: auto;
-  }
-
-  &__wrapper {
-  }
-
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-
-  &__item {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 46px;
-  }
-
-  &__item:last-child {
-    margin-bottom: 0;
-  }
-
-  &__item--current {
-  }
-}

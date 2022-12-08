@@ -7,8 +7,6 @@
   padding: 20px;
   box-sizing: border-box;
 }
-.invite {
-}
 .location__invite-list {
 margin: 0;
 padding: 0;
@@ -18,7 +16,7 @@ justify-content: space-between;
 }
 .location__invite-item {
 }
-.invite__title {
+.location__invite-title {
   padding: 0;
   margin: 0;
   font-family: 'Oswald';
@@ -29,7 +27,7 @@ justify-content: space-between;
   text-transform: uppercase;
   color: #111111;
 }
-.invite__contacts {
+.location__invite-contacts {
   padding: 0;
   margin: 0;
   font-family: 'Lato';
@@ -48,9 +46,7 @@ justify-content: space-between;
   margin: 0 auto;
   position: relative;
 }
-.map {
-}
-.map__pin {
+.location__map-pin-image {
   position: absolute;
   top: 138px;
   left: 134px;
