@@ -1,0 +1,24 @@
+.main-header {
+  background-color: #FFFFFF;
+  margin: 10px 20px 17.39px 20px;
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__logo-image {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__logo-text {
+  }
+
+  &__logo-image-text {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+  }
+}

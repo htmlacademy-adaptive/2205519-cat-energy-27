@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+@import "button-primary";
+@import "button-secondary";
+@import "main-header";
+@import "promo";
+@import "goals";
+@import "work";
+@import "example";
+@import "location";
+@import "main-footer";
+@import "assortment";
+@import "additional";
+@import "gift";
+@import "client";
+@import "aim";
+@import "owner";
+@import "comment";
+@import "extra";
+@import "products";
+@import "field";
+@import "textarea";
+@import "control";
+@import "socials";
+@import "copyright";
+@import "main-nav";
+
+body {
+  margin: 0;
+  background: red;
+}
+.visually-hidden {
+  display: none;
+}

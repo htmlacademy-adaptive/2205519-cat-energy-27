@@ -1,0 +1,51 @@
+.work {
+}
+.work__wrapper {
+  background-color: #FFFFFF;
+}
+.work__title {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.work__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.work__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.work__item-icon-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68B738;
+}
+.work__item-icon {
+  align-self: center;
+  margin: auto;
+}
+.work__item-description {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

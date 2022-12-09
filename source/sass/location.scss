@@ -1,0 +1,53 @@
+.location {
+}
+.location__wrapper {
+  background-color: #F2F2F2;
+}
+.location__invite {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.location__invite-list {
+margin: 0;
+padding: 0;
+list-style-type: none;
+display: flex;
+justify-content: space-between;
+}
+.location__invite-item {
+}
+.location__invite-title {
+  padding: 0;
+  margin: 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+.location__invite-contacts {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+.location__map {
+  width: 320px;
+  height: 362px;
+  background-image: url("../img/main-page/location/map-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  position: relative;
+}
+.location__map-pin-image {
+  position: absolute;
+  top: 138px;
+  left: 134px;
+}
