@@ -2,11 +2,13 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
+      <div class="main-header__content">
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="./img/main-page/header/header-logo-mobile.svg" width="33" height="38" alt="Питание для котов Cat Energy." />
       </a>
@@ -14,24 +16,26 @@
         <img class="main-header__logo-image-text" src="./img/main-page/header/header-logo-mobile-text.svg" width="101" height="18" alt="Cat Energy." />
       </a>
 
+
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visully-hidden">Открыть меню.</span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
+    </div>
     </header>
 
     <main class="main-container">
@@ -41,20 +45,15 @@
 
       <section class="promo">
         <div class="promo__wrapper">
-          <div class="promo__background"></div>
-          <!-- Как сюда доабавить фоновое изображение?
-                Также после подключения сервера заметил, что не подключены картинки, они отображаются в лайв-сервере текстового редактора, но их не видно на сервере npm run start   -->
-          <header class="promo__header">
-            <h2 class="promo__title">Функциональное питание для котов</h2>
+          <div class="promo__cat-wrapper">
+            <div class="promo__cat-background"></div>
+          </div>
+            <h2 class="promo__title">Функциональное <br />питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            <button
-              class="promo__button promo__button-primary button-primary button"
-              type="button"
-            >
+        <img class="promo__product" src="./img/main-page/promo/promo-can.png" width="280" height="270" alt="Кошачья еда со вкусом курицы" />
+        <button class="promo__button promo__button-primary button-primary button" type="button" >
             <span class="promo__button-text promo__button-primary-text button-text">Подобрать программу</span>
             </button>
-          </header>
-          <img class="promo__product" src="./img/main-page/promo/promo-can.png" width="280" height="270" alt="Кошачья еда со вкусом курицы" />
         </div>
       </section>
 
@@ -65,7 +64,7 @@
           </h2>
           <ul class="goals__weight-goals">
             <li class="goals__item">
-              <img class="goals__image" src="./img/main-page/goals/goals-cat-loss.svg" width="50" height="53" alt="#" />
+              <img class="goals__image goals__image-slim" src="./img/main-page/goals/goals-cat-loss.svg" width="50" height="53" alt="#" />
             <h3 class="goals__title">Похудение</h3>
             <p class="goals__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
@@ -78,7 +77,7 @@
             </a>
             </li>
             <li class="goals__item">
-              <img class="goals__image" src="./img/main-page/goals/goals-cat-gain.svg" width="67" height="50" alt="#" />
+              <img class="goals__image goals__image-pro" src="./img/main-page/goals/goals-cat-gain.svg" width="67" height="50" alt="#" />
             <h3 class="goals__title">Набор массы</h3>
             <p class="goals__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
@@ -97,13 +96,13 @@
         <div class="work__wrapper">
           <h2 class="work__title">Как это работает</h2>
           <ul class="work__list">
-            <li class="work__item">
+            <li class="work__item work__item-1">
               <p class="work__item-icon-wrapper">
                 <img class="work__item-icon" src="./img/main-page/work/work-leaf.svg" width="30" height="32" alt="#" />
               </p>
               <p class="work__item-description"> Функциональное питание содержит только полезные питательные вещества. </p>
             </li>
-            <li class="work__item">
+            <li class="work__item work__item-2">
               <p class="work__item-icon-wrapper">
                 <img class="work__item-icon" src="./img/main-page/work/work-powder.svg" width="26" height="29" alt="#" />
               </p>
@@ -112,7 +111,7 @@
                 готово.
               </p>
             </li>
-            <li class="work__item">
+            <li class="work__item work__item-3">
               <p class="work__item-icon-wrapper">
                 <img class="work__item-icon" src="./img/main-page/work/work-meal.svg" width="25" height="30" alt="#" />
               </p>
@@ -121,7 +120,7 @@
                 питание.
               </p>
             </li>
-            <li class="work__item">
+            <li class="work__item work__item-4">
               <p class="work__item-icon-wrapper">
                 <img class="work__item-icon" src="./img/main-page/work/work-time.svg" width="26" height="31" alt="#" />
               </p>
@@ -144,26 +143,27 @@
               При этом он не менял своих привычек и по-прежнему спит по 16 часов
               в день.
             </p>
-            <ul class="example__fieldset-list">
-              <li class="example__fieldset-item">
+            <ul class="example__list">
+              <li class="example__list-item">
                 <fieldset class="example__fieldset-content">
                   <legend class="example__fieldset-title">
-                    снижение веса
+                    снижение <br />веса
                   </legend>
                     <p class="example__fieldset-content-text">5 кг</p>
                 </fieldset>
               </li>
-              <li class="example__fieldset-item">
+              <li class="example__list-item">
                 <fieldset class="example__fieldset-content">
                   <legend class="example__fieldset-title">
-                    затрачено времени
+                    затрачено <br />времени
                   </legend>
                     <p class="example__fieldset-content-text">60 дней</p>
                 </fieldset>
               </li>
+              <li class="example__list-item example__list-expenses">
+                <p class="example__content-expenses">Затраты на питание: 15 000 руб.</p>
+              </li>
             </ul>
-            <p class="example__content-expenses">Затраты на питание: 15 000 руб.</p>
-            <p class="example__content-amount visually-hidden">15 000 руб.</p>
           </div>
           <div class="example__cat-slider">
             <button
@@ -177,7 +177,7 @@
           <div class="location__invite">
             <ul class="location__invite-list">
               <li class="location__invite-item">
-                <h2 class="location__invite-title">Приглашаем к сотрудничеству дилеров!</h2>
+                <h2 class="location__invite-title">Приглашаем <br />к сотрудничеству <br />дилеров!</h2>
               </li>
               <li class="location__invite-item">
                 <p class="location__invite-contacts">

@@ -1,3 +1,4 @@
+@import "./global/variables.scss";
 @import "button-primary";
 @import "button-secondary";
 @import "main-header";
@@ -9,9 +10,7 @@
 @import "main-footer";
 @import "assortment";
 @import "additional";
-@import "gift";
 @import "client";
-@import "aim";
 @import "owner";
 @import "comment";
 @import "extra";
@@ -25,7 +24,6 @@
 
 body {
   margin: 0;
-  background: red;
 }
 .visually-hidden {
   display: none;

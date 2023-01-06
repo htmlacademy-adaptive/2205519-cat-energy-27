@@ -2,66 +2,60 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="index.html">
-        <img
-          class="main-header__logo-image"
-          src="./img/main-page/header/header-logo-mobile.svg"
-          width="33"
-          height="38"
-          alt="Питание для котов Cat Energy."
-        />
+      <div class="main-header__content">
+      <a class="main-header__logo"  href="index.html">
+        <img class="main-header__logo-image" src="./img/main-page/header/header-logo-mobile.svg" width="33" height="38" alt="Питание для котов Cat Energy." />
       </a>
       <a class="main-header__logo-text">
-        <img
-          class="main-header__logo-image-text"
-          src="./img/main-page/header/header-logo-mobile-text.svg"
-          width="101"
-          height="18"
-          alt="Cat Energy."
-        />
+        <img class="main-header__logo-image-text" src="./img/main-page/header/header-logo-mobile-text.svg" width="101" height="18" alt="Cat Energy." />
       </a>
+
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visully-hidden">Открыть меню.</span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
             <li class="main-nav__item main-nav__item--current">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Подбор программы</a>
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
+    </div>
     </header>
 
     <main class="main-container">
       <section class="client">
+        <div class="client__plus-aim-wrapper">
         <div class="client__wrapper">
           <h1 class="client__title">Подбор программы</h1>
         <p class="client__description">
           Заполните анкету, и мы подберём программу питания для вашего кота
         </p>
+        <div class="client__details">
           <form class="client__form form" action="https://echo.htmlacademy.ru/" method="post" >
             <p class="client__form-group">
               <label class="client__form-label" for="client-name">Имя:*</label>
-              <input class="field client__form-field client__form-field-name field" type="text" name="client-name" id="client-name" placeholder="Барсик" required />
+              <input class="field client__form-field client__form-field-name" type="text" name="client-name" id="client-name" placeholder="Барсик" required />
             </p>
             <p class="client__form-group">
               <label class="client__form-label" for="client-weight"
                 >Вес (кг):*</label>
-              <input class="field client__form-field client__form-field-weight field" type="text" name="client-weight" id="client-weight" placeholder="7" required />
+              <input class="field client__form-field client__form-field-weight" type="text" name="client-weight" id="client-weight" placeholder="7" required />
             </p>
             <p class="client__form-group">
               <label class="client__form-label" for="client-age"
@@ -69,39 +63,36 @@
               <input class="client__form-field client__form-field-age field" type="text" name="client-age" id="client-age" placeholder="7" />
             </p>
           </form>
-        </div>
-      </section>
 
-      <section class="aim">
-        <div class="aim__wrapper">
-          <h2 class="aim__title visually-hidden">Цель программы питания</h2>
-          <fieldset class="aim__group">
-            <legend class="aim__title visually-hidden">Цель программы</legend>
-            <ul class="aim__list">
-              <li class="aim__item">
-                <label class="aim__item-choice aim__label">
-                  <input class="aim__input visually-hidden" type="radio" name="aim-group" checked />
-                  <span class="aim__mark"></span>
-                  <span class="aim__description">Похудение</span>
+          <fieldset class="client__aim-group">
+            <legend class="client__aim-title visually-hidden">Цель программы</legend>
+            <ul class="client__aim-list">
+              <li class="client__aim-item">
+                <label class="client__aim-item-choice client__aim-label">
+                  <input class="client__aim-input visually-hidden" type="radio" name="aim-group" checked />
+                  <span class="client__aim-mark"></span>
+                  <span class="client__aim-description">Похудение</span>
                 </label>
               </li>
-              <li class="aim__item">
-                <label class="aim__item-choice aim__label">
-                  <input class="aim__input visually-hidden" type="radio" name="aim-group" />
-                  <span class="aim__mark"></span>
-                  <span class="aim__description">Набор массы</span>
+              <li class="client__aim-item">
+                <label class="client__aim-item-choice client__aim-label">
+                  <input class="client__aim-input visually-hidden" type="radio" name="aim-group" />
+                  <span class="client__aim-mark"></span>
+                  <span class="client__aim-description">Набор массы</span>
                 </label>
               </li>
-              <li class="aim__item">
-                <label class="aim__item-choice aim__label">
-                  <input class="aim__input visually-hidden" type="radio" name="aim-group" />
-                  <span class="aim__mark"></span>
-                  <span class="aim__description">Не знаю (нужен ваш совет)</span>
+              <li class="client__aim-item">
+                <label class="client__aim-item-choice client__aim-label">
+                  <input class="client__aim-input visually-hidden" type="radio" name="aim-group" />
+                  <span class="client__aim-mark"></span>
+                  <span class="client__aim-description">Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
           </fieldset>
         </div>
+        </div>
+      </div>
       </section>
 
       <section class="owner">
@@ -160,13 +151,16 @@
                   <span class="control-label">Витамины</span>
                 </label>
               </li>
+              <li class="extra__item extra__item-button">
+              <button class="extra__button extra__wrapper-button-primary button-primary button" type="button">
+                Отправить заявку
+              </button>
+            </li>
+              <li class="extra__item extra__item-remark">
+              <p class="extra__remark">* — Обязательные поля</p>
+            </li>
             </ul>
-            <button class="extra__button extra__wrapper-button-primary button-primary button" type="button">
-              Отправить заявку
-            </button>
           </fieldset>
-
-          <p class="extra__remark">* — Обязательные поля</p>
         </div>
       </section>
 
@@ -175,7 +169,7 @@
           <div class="location__invite">
             <ul class="location__invite-list">
               <li class="location__invite-item">
-                <h2 class="location__invite-title">Приглашаем к сотрудничеству дилеров!</h2>
+                <h2 class="location__invite-title">Приглашаем <br />к сотрудничеству <br />дилеров!</h2>
               </li>
               <li class="location__invite-item">
                 <p class="location__invite-contacts">
@@ -190,6 +184,7 @@
         </div>
       </section>
     </main>
+
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">

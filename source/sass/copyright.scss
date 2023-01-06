@@ -14,3 +14,23 @@
 .copyright__logo {
   margin-left: auto;
 }
+
+
+@media (min-width: $tablet-width) {
+  .copyright {
+  }
+  .copyright__author {
+    margin-right: 23px;
+  }
+  .copyright__logo {
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+  }
+  .copyright__author {
+  }
+  .copyright__logo {
+  }
+}

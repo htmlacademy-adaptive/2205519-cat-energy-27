@@ -15,4 +15,36 @@
   color: #000000;
 }
 .comment__textarea {
+  width: 100%;
+  min-height: 150px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .comment {
+  }
+  .comment__wrapper {
+  }
+  .comment__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .comment__textarea {
+    min-height: 174px;
+  }
+  .textarea {
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+  }
+  .comment__wrapper {
+  }
+  .comment__title {
+  }
+  .comment__textarea {
+  }
+  .textarea {
+  }
 }

@@ -28,16 +28,23 @@
   line-height: 18px;
   color: #444444;
 }
-.example__fieldset-list {
+.example__list {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 32px;
 }
-.example__fieldset-item {
+.example__list-item {
+  min-width: 124px;
+}
+.example__list-expenses {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 .example__fieldset-content {
 
@@ -91,4 +98,107 @@
 .example__cat-slider-button {
   display: block;
   margin: auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    background-color: #FFFFFF;
+  }
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .example__content {
+  }
+  .example__content-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .example__list {
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 32px;
+  }
+  .example__list-item {
+  }
+  .example__list-expenses {
+    grid-column-start: 3;
+    align-self: center;
+    justify-self: end;
+    width: 250px;
+  }
+  .example__fieldset-content {
+  }
+  .example__fieldset-title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .example__fieldset-content-text {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .example__content-expenses {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+  .example__cat-slider {
+    width: 560px;
+    height: 512px;
+  }
+  .example__cat-slider-button {
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    background-color: #F2f2f2;
+    position: relative;
+  }
+  .example__content {
+    width: 436px;
+    min-height: 317px;
+    margin: 70px 70px 50px 110px;
+  }
+  .example__title {
+    margin-bottom: 76px;
+  }
+  .example__content {
+  }
+  .example__content-description {
+  }
+  .example__list {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+  .example__list-item {
+  }
+  .example__list-expenses {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: start;
+    width: 250px;
+  }
+  .example__fieldset-content {
+  }
+  .example__fieldset-title {
+  }
+  .example__fieldset-content-text {
+  }
+  .example__content-expenses {
+    white-space: nowrap;
+  }
+  .example__content-amount {
+  }
+  .example__cat-slider {
+    position: absolute;
+    width: 560px;
+    height: 512px;
+    left: 55%;
+    top: 0;
+    margin: 0;
+  }
+  .example__cat-slider-button {
+  }
 }
