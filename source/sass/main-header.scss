@@ -2,23 +2,41 @@
   background-color: #FFFFFF;
   margin: 10px 20px 17.39px 20px;
 
-  &__logo {
-    margin-right: auto;
-  }
+  background-color: rgb(224, 201, 201);
+  color: #ffffff;
+}
+.main-header__content {
+  background-color: #FFFFFF;
+  display: flex;
+}
+.main-header__logo {
+}
+.main-header__logo-image {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.main-header__logo-text {
+  margin: 0 auto;
+}
+.main-header__logo-image-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+  margin: auto;
+}
 
-  &__logo-image {
-    display: block;
-    padding: 0;
-    margin: 0;
+@media (min-width: $tablet-width) {
+  .main-header__logo-text {
+    margin-left: 12px;
   }
+}
 
-  &__logo-text {
-  }
-
-  &__logo-image-text {
-    display: block;
-    padding: 0;
-    margin: 0;
-    margin: 0 auto;
+@media (min-width: $desktop-width) {
+    .main-header {
+      margin: 53px 110px;
+    }
+    .main-header__logo-text {
+      margin-left: 12px;
   }
 }

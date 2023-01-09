@@ -1,6 +1,9 @@
 .client__wrapper {
   background-color: #FFFFFF;
 }
+.client__details {
+  margin-bottom: 50px;
+}
 .client__title {
   margin: 0;
   padding: 0;
@@ -25,6 +28,7 @@
   color: #000000;
 }
 .client__form-label {
+  white-space: nowrap;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -32,4 +36,155 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  margin-right: 13px;
+}
+.client__form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 46px;
+}
+.client__form-group {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-width: 280px;
+}
+.client__form-field {
+  width: 100%;
+}
+
+
+.client__aim-description {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.client__aim-group {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.client__aim-title {
+}
+.client__aim-list {
+  width: 100%;
+  margin: 0;
+  padding: 30px;
+  list-style-type: none;
+}
+.client__aim-item {
+}
+.client__aim-item-choice {
+}
+.client__aim-label {
+
+}
+.client__aim-input {
+}
+.client__aim-mark {
+}
+.client__aim-description {
+}
+
+
+
+
+@media (min-width: $tablet-width) {
+  .client {
+  }
+  .client__details {
+    margin-bottom: 50px;
+  }
+  .client__wrapper {
+  }
+  .client__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .client__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .client__details {
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  .client__form {
+  }
+  .form {
+  }
+  .client__form-group {
+  }
+  .client__form-label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 20px;
+
+  }
+  .field {
+  }
+  .client__form-field {
+  }
+  .client__form-field-name {
+  }
+  .client__form-field-weight {
+  }
+  .client__form-field-age {
+  }
+
+  .client__aim-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .client {
+  }
+ .client__details {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .client__wrapper {
+  }
+  .client__title {
+  }
+  .client__description {
+  }
+  .client__form {
+    width: 579px;
+    margin: 0;
+  }
+  .form {
+  }
+  .client__form-group {
+  }
+  .client__form-label {
+  }
+  .field {
+  }
+  .client__form-field {
+  }
+  .client__form-field-name {
+  }
+  .client__form-field-weight {
+  }
+  .client__form-field-age {
+  }
+
+  .client__aim-group {
+    width: 579px;
+    padding: 0;
+    margin: 0;
+  }
 }

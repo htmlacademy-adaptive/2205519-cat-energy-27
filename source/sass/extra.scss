@@ -25,15 +25,34 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
 }
 .extra__item {
+  align-self: center;
 }
 .extra__item:last-child {
   margin-bottom: 34px;
 }
+.extra__item-button {
+
+}
+.extra__item-remark {
+
+}
 .extra__label {
 }
+.control-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+}
 .extra__button {
+  width: 100%;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
@@ -45,6 +64,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #68B738;
+  justify-content: center;
 }
 .extra__wrapper-button-primary {
 }
@@ -58,4 +78,104 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+
+}
+
+
+@media (min-width: $tablet-width) {
+  .extra {
+  }
+  .extra__wrapper {
+  }
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .extra__fieldset {
+  }
+  .extra__group {
+  }
+  .extra__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .extra__item {
+  }
+  .extra__item-button {
+
+  }
+  .extra__item-remark {
+
+  }
+  .extra__label {
+  }
+  .control {
+  }
+  .control__input {
+  }
+  .control-mark {
+  }
+  .control-label {
+  }
+  .extra__button {
+  }
+  .extra__wrapper-button-primary {
+  }
+  .button-primary {
+  }
+  .button {
+  }
+  .extra__remark {
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+  }
+  .extra__wrapper {
+  }
+  .extra__title {
+  }
+  .extra__fieldset {
+  }
+  .extra__group {
+  }
+  .extra__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 61px;
+  }
+  .extra__item {
+  }
+  .extra__item-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .extra__item-remark {
+
+  }
+  .extra__label {
+  }
+  .control {
+  }
+  .control__input {
+  }
+  .control-mark {
+  }
+  .control-label {
+  }
+  .extra__button {
+  }
+  .extra__wrapper-button-primary {
+  }
+  .button-primary {
+  }
+  .button {
+  }
+  .extra__remark {
+  }
 }

@@ -19,3 +19,25 @@
 }
 .socials__link--telegram {
 }
+
+
+@media (min-width: $tablet-width) {
+  .socials {
+  }
+  .socials__list {
+    margin: 0;
+  }
+  .socials__item {
+  }
+  .socials__link {
+  }
+  .socials__link--vk {
+  }
+  .socials__link--youtube {
+  }
+  .socials__link--telegram {
+  }
+}
+
+@media (min-width: $desktop-width) {
+}
