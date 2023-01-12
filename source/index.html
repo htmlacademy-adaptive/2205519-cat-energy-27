@@ -8,8 +8,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__content">
-      <a class="main-header__logo">
+      <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="./img/main-page/header/header-logo-mobile.svg" width="33" height="38" alt="Питание для котов Cat Energy." />
       </a>
       <a class="main-header__logo-text">
@@ -17,11 +17,11 @@
       </a>
 
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link">Главная</a>
@@ -51,7 +51,7 @@
             <h2 class="promo__title">Функциональное <br />питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <img class="promo__product" src="./img/main-page/promo/promo-can.png" width="280" height="270" alt="Кошачья еда со вкусом курицы" />
-        <button class="promo__button promo__button-primary button-primary button" type="button" >
+        <button class="promo__button promo__button-primary button-primary button" type="button">
             <span class="promo__button-text promo__button-primary-text button-text">Подобрать программу</span>
             </button>
         </div>
@@ -64,8 +64,10 @@
           </h2>
           <ul class="goals__weight-goals">
             <li class="goals__item">
-              <img class="goals__image goals__image-slim" src="./img/main-page/goals/goals-cat-loss.svg" width="50" height="53" alt="#" />
-            <h3 class="goals__title">Похудение</h3>
+              <div class="goals__item-title goals__item-title-slim">
+                <img class="goals__image goals__image-slim" src="./img/main-page/goals/goals-cat-loss.svg" width="50" height="53" alt="#" />
+                <h3 class="goals__title">Похудение</h3>
+              </div>
             <p class="goals__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
@@ -77,8 +79,10 @@
             </a>
             </li>
             <li class="goals__item">
-              <img class="goals__image goals__image-pro" src="./img/main-page/goals/goals-cat-gain.svg" width="67" height="50" alt="#" />
-            <h3 class="goals__title">Набор массы</h3>
+              <div class="goals__item-title goals__item-title-pro">
+                <img class="goals__image goals__image-pro" src="./img/main-page/goals/goals-cat-gain.svg" width="67" height="50" alt="#" />
+                <h3 class="goals__title">Набор массы</h3>
+              </div>
             <p class="goals__description">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -187,7 +191,13 @@
             </ul>
           </div>
           <div class="location__map">
-            <img class="location__map-pin-image" src="./img/main-page/location/map-pin.png" width="57" height="53" alt="Наше местонахождение на карте" />
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.863030884019!2d30.320913650805704!3d59.93878575734502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2stn!4v1673386797459!5m2!1sru!2stn"
+            width="100%"
+            height="100%"
+            allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+            <!-- Пока непонятно как через js убрать лишние элементы на картах и кастомизировать маркер -->
           </div>
         </div>
       </section>
@@ -242,5 +252,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -2,21 +2,60 @@
 }
 .comment__wrapper {
   background-color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-bottom: 23px;
 }
 .comment__title {
   margin: 0;
   padding: 0;
+  padding-left: 20px;
   margin-bottom: 38px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 1.08;
   color: #000000;
+  white-space: nowrap;
+	text-align: left;
+
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    padding-left: 30px;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+
+    vertical-align: middle;
+    background-clip: content-box;
+    border-bottom: 2px solid #68B738;
+    }
+
+    &:after {
+      width: 100%;
+      left: .5em;
+      margin: 0 50% 0 0;
+      }
 }
 .comment__textarea {
+  box-sizing: border-box;
   width: 100%;
   min-height: 150px;
+}
+.comment__textarea::placeholder {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: #444444;
 }
 
 
@@ -24,15 +63,60 @@
   .comment {
   }
   .comment__wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 65px;
   }
   .comment__title {
+    margin: 0;
+    padding-left: 70px;
+    margin-bottom: 76px;
+    white-space: nowrap;
     font-size: 36px;
     line-height: 36px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+
+  &:after,
+  &:before {
+    padding-left: 30px;
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+
+    vertical-align: middle;
+    background-clip: content-box;
+    border-bottom: 2px solid #68B738;
+    }
+
+    &:before {
+      position: absolute;
+      left: -50%;
+      top: 50%;
+      right: 5em;
+      }
+    &:after {
+      width: 100%;
+      left: .5em;
+      margin: 0 50% 0 0;
+      }
   }
   .comment__textarea {
     min-height: 174px;
   }
   .textarea {
+  }
+  .comment__textarea::placeholder {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #444444;
   }
 }
 
@@ -40,11 +124,23 @@
   .comment {
   }
   .comment__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 67px;
   }
   .comment__title {
+    padding-left: 110px;
+
+    &:before {
+      position: absolute;
+      left: -46%;
+      top: 50%;
+      right: 5em;
+      }
   }
   .comment__textarea {
   }
   .textarea {
+    max-width: 1400px;
   }
 }
