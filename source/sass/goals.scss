@@ -2,6 +2,9 @@
 }
 .goals__wrapper {
   background-color: #FFFFFF;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
 }
 .goals__weight-goals {
   padding: 0;
@@ -14,8 +17,33 @@
 }
 .goals__item {
   background-color: #F2F2F2;
+  box-sizing: border-box;
 }
+.goals__item-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+
+}
+
+.goals__item-title-slim {
+  margin-top: 21px;
+  margin-left: 23px;
+}
+
+.goals__item-title-pro {
+  margin-top: 24px;
+  margin-left: 13px;
+ }
 .goals__image {
+  display: inline-block;
+}
+.goals__image-slim {
+  margin-right: 19px;
+}
+.goals__image-pro {
+  margin-right: 11px;
+
 }
 .goals__title {
 font-family: 'Oswald';
@@ -27,7 +55,6 @@ text-transform: uppercase;
 color: #000000;
 padding: 0;
 margin: 0;
-margin-bottom: 29px;
 }
 .goals__description {
 font-family: 'Lato';
@@ -38,11 +65,23 @@ line-height: 18px;
 color: #444444;
 padding: 0;
 margin: 0;
+margin-left: 20px;
+margin-right: 30px;
 margin-bottom: 38px;
 }
 .goals__link {
+  display: inline-block;
   text-decoration: none;
   padding: 4px 0;
+  margin-left: 20px;
+  margin-bottom: 18px;
+
+  &:hover {
+
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .goals__link-catalog {
   font-family: 'Oswald';
@@ -53,10 +92,31 @@ margin-bottom: 38px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  padding: 4px 0;
+  margin-right: 15px;
 }
 .goals__link-icon {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
+@media (max-width: $mobile-width-only) {
+  .goals__item {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: #D9D9D9;
+      margin: 0 auto;
+      margin-top: -20px;
+      width: 93%;
+    }
+  }
+}
 
 @media (min-width: $tablet-width) {
   .goals__weight-goals {
@@ -64,18 +124,52 @@ margin-bottom: 38px;
     flex-direction: column;
   }
   .goals__item {
+    position: relative;
     min-height: 372px;
+    padding: 77px 300px 53px 52px;
+  }
+  .goals__image {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+  }
+  .goals__image-slim {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6%;
+  }
+  .goals__image-pro {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3%;
+  }
+  .goals__item-title {
+
   }
 
-  .goals__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
+  .goals__item-title-slim {
+
   }
+
+  .goals__item-title-pro {
+
+   }
+   .goals__link {
+    margin: 0;
+    padding: 0;
+   }
+
 
   .goals__description {
+    max-width: 340px;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 48px;
+    padding: 0;
   }
 
   .goals__link-catalog {
@@ -94,23 +188,66 @@ margin-bottom: 38px;
     width: 268px;
     height: 200px;
   }
+  .goals__title {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .goals__wrapper {
     margin: 0 auto;
-    max-width: 1300px
+    padding: 0;
+    max-width: 1300px;
+    margin-bottom: 71px;
+    margin-left: 110px;
+    margin-right: 110px;
   }
   .goals__weight-goals {
-    ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
+  .goals__image {
+  }
+  .goals__image-slim {
+    position: static;
+    transform: none;
+
+  }
+  .goals__image-pro {
+    position: static;
+    transform: none;
+
+  }
   .goals__item {
     min-height: 372px;
     width: 570px;
+    padding: 0;
   }
+  .goals__item-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;;
+  }
+  .goals__description {
+    max-width: 440px;
+    margin-right: 0;
+  }
+
+  .goals__item-title-slim {
+    margin-top: 41px;
+    margin-left: 52px;
+  }
+
+  .goals__item-title-pro {
+    margin-top: 47px;
+    margin-left: 33px;
+   }
 
   .goals__title {
     font-weight: 400;
@@ -120,23 +257,34 @@ margin-bottom: 38px;
 
   .goals__description {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
+    margin-left: 52px;
+    margin-right: 61px;
+    margin-bottom: 23px;
   }
+  .goals__link {
+    display: block;
+    margin-left: 52px;
+    margin-bottom: auto;
 
+  }
   .goals__link-catalog {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1;
     text-align: center;
     text-transform: uppercase;
+    margin-right: 25px;
   }
 
   .goals__image-slim {
     width: 100px;
     height: 106px;
+    margin-right: 62px;
   }
 
   .goals__image-pro {
     width: 134px;
     height: 100px;
+    margin-right: 47px;
   }
 }

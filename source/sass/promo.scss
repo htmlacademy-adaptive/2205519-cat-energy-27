@@ -5,6 +5,7 @@
   flex-direction: column;
   background:#FFFFFF;
   position: relative;
+  margin-bottom: 20px;
 }
 .promo__cat-wrapper {
   display: block;
@@ -23,12 +24,12 @@
   background-position: center;
 }
 .promo__title {
-  z-index: 1;
+z-index: 1;
 font-family: 'Oswald';
 font-style: normal;
 font-weight: 400;
 font-size: 36px;
-line-height: 36px;
+line-height: 1;
 text-align: center;
 color: #FFFFFF;
 padding: 0;
@@ -43,7 +44,7 @@ font-family: 'Oswald';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 14px;
+line-height: 1;
 text-transform: uppercase;
 color: #FFFFFF;
 padding: 0;
@@ -54,6 +55,8 @@ text-align: center;
   z-index: 1;
   display: block;
   margin: 0 auto;
+  padding: 7px 14px;
+  min-height: 40px;
 }
 .promo__product {
   z-index: 1;
@@ -63,28 +66,33 @@ text-align: center;
   margin-top: 130px;
 }
 .promo__button-text {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 .promo__button-primary-text {
 }
-.button-text {
-font-family: 'Oswald';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 18px;
-display: flex;
-align-items: center;
-text-align: center;
-text-transform: uppercase;
-color: #FFFFFF;
-}
 
+@media (max-width: $mobile-width-only) {
+  .promo__button {
+    justify-self: center;
+    min-width: 280px;
+    max-width: 400px;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .promo__cat-wrapper {
     display: none;
   }
   .promo__title {
+    z-index: 2;
     font-weight: 400;
     font-size: 60px;
     line-height: 60px;
@@ -93,8 +101,10 @@ color: #FFFFFF;
     margin: 0;
     margin-left: 117px;
     margin-bottom: 41px;
+    margin-top: 64px;
   }
   .promo__slogan {
+    z-index: 2;
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
@@ -116,40 +126,49 @@ color: #FFFFFF;
   }
   .promo__button {
     margin-left: 117px;
-    margin-bottom: 526px;
+    margin-bottom: 500px;
+    min-width: 244px;
+    max-width: 350px;
+    padding: 14px 26px;
+    min-height: 54px;
+
+  }
+  .promo__button-text {
+    font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo__wrapper {
+    padding-top: 0;
+    margin-bottom: 100px;
   }
   .promo__title {
-    z-index: 2;
     margin-left: 190px;
+    margin-top: 111px;
   }
   .promo__slogan {
-    z-index: 2;
     margin-left: 190px;
   }
   .promo__button {
     margin-left: 190px;
-    margin-bottom: 267px;
+    margin-bottom: 180px;
   }
-
   .promo__product {
     position: absolute;
     width: 552px;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
-    top: -35%;
-    left: 10%;
+    top: 27%;
+    transform: translateY(-50%);
+    left: 16%;
     right: 0;
   }
   .promo__cat-wrapper {
     display: block;
     position: absolute;
-    top: -35%;
+    top: -15%;
     right: 0;
     width: 720px;
     height: 700px;

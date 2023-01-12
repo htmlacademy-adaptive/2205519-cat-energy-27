@@ -8,8 +8,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__content">
-      <a class="main-header__logo"  href="index.html">
+      <div class="main-header__wrapper">
+      <a class="main-header__logo">
         <img class="main-header__logo-image" src="./img/main-page/header/header-logo-mobile.svg" width="33" height="38" alt="Питание для котов Cat Energy." />
       </a>
       <a class="main-header__logo-text">
@@ -17,11 +17,11 @@
       </a>
 
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -45,16 +45,26 @@
           <ol class="assortment__list products">
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
-                <img class="products__image" src="./img/catalog/assortment/mobile/chicken-500.png" width="68" height="86" alt="Банка с курицей." />
-                <h2 class="products__title">Cat Energy <br />PRO 500 г</h2>
+                <div class="products__wrapper-image">
+                   <img class="products__image products-image-small" src="./img/catalog/assortment/mobile/chicken-500.png" width="68" height="86" alt="Банка с курицей." />
+                  </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />PRO 500 г</h2>
                 <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
+                  <div class="products__info">
+                    <dt class="products__description-term products__description-item">Масса</dt>
                   <dd class="products__description-value products__description-item">500 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Курица</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">700 ₽</dd>
+                  </div>
+                  <div class="products__info">
+                    <dt class="products__description-term products__description-item">Вкус</dt>
+                    <dd class="products__description-value products__description-item">Курица</dd>
+                  </div>
+                  <div class="products__info">
+                    <dt class="products__description-term products__description-item">Цена</dt>
+                    <dd class="products__description-value products__description-item">700 ₽</dd>
+                  </div>
                 </dl>
+              </div>
               </div>
               <button
                 class="assortment__button button-primary button"
@@ -65,21 +75,31 @@
             </li>
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
-                <img
-                  class="products__image"
+                <div class="products__wrapper-image">
+                  <img
+                  class="products__image products-image-large"
                   src="./img/catalog/assortment/mobile/chicken-1000.png"
                   width="84"
                   height="100"
                   alt="Банка с курицей побольше."
                 />
-                <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
+                </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
                 <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
-                  <dd class="products__description-value products__description-item">1000 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Курица</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">1000 ₽</dd>
+                  <div class="products__info">
+                    <dt class="products__description-term products__description-item">Масса</dt>
+                    <dd class="products__description-value products__description-item">1000 г</dd>
+                  </div>
+                  <div class="products__info">
+                    <dt class="products__description-term products__description-item">Вкус</dt>
+                    <dd class="products__description-value products__description-item">Курица</dd>
+                  </div>
+                  <div class="products__info">
+                    <dt class="products__description-term products__description-item">Цена</dt>
+                    <dd class="products__description-value products__description-item">1000 ₽</dd>
+                </div>
+                  </div>
                 </dl>
               </div>
               <button
@@ -91,22 +111,57 @@
             </li>
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
-                <img
-                  class="products__image"
+                <div class="products__wrapper-image">
+                  <img
+                  class="products__image products-image-small"
                   src="./img/catalog/assortment/mobile/fish-500.png"
                   width="68"
                   height="86"
                   alt="Банка с рыбой."
                 />
-                <h2 class="products__title">Cat Energy <br />PRO 500 г</h2>
-                <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
-                  <dd class="products__description-value products__description-item">500 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Рыба</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">700 ₽</dd>
-                </dl>
+                </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />PRO 500 г</h2>
+                  <dl class="products__description">
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Масса</dt>
+                      <dd class="products__description-value products__description-item">500 г</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Вкус</dt>
+                      <dd class="products__description-value products__description-item">Рыба</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Цена</dt>
+                      <dd class="products__description-value products__description-item">700 ₽</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              <button class="assortment__button button-primary button" type="button">Заказать</button>
+            </li>
+            <li class="products__item">
+              <div class="products__wrapper products__wrapper-content">
+                <div class="products__wrapper-image">
+                  <img class="products__image products-image-large" src="./img/catalog/assortment/mobile/fish-1000.png" width="84" height="100" alt="Банка с рыбой побольше." />
+                </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
+                  <dl class="products__description">
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Масса</dt>
+                      <dd class="products__description-value products__description-item">1000 г</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Вкус</dt>
+                      <dd class="products__description-value products__description-item">Рыба</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Цена</dt>
+                      <dd class="products__description-value products__description-item">1000 ₽</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
               <button
                 class="assortment__button button-primary button"
@@ -117,48 +172,32 @@
             </li>
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
-                <img
-                  class="products__image"
-                  src="./img/catalog/assortment/mobile/chicken-1000.png"
-                  width="84"
-                  height="100"
-                  alt="Банка с рыбой побольше."
-                />
-                <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
-                <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
-                  <dd class="products__description-value products__description-item">1000 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Рыба</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">1000 ₽</dd>
-                </dl>
-              </div>
-              <button
-                class="assortment__button button-primary button"
-                type="button"
-              >
-                Заказать
-              </button>
-            </li>
-            <li class="products__item">
-              <div class="products__wrapper products__wrapper-content">
-                <img
-                  class="products__image"
+                <div class="products__wrapper-image">
+                  <img
+                  class="products__image products-image-small"
                   src="./img/catalog/assortment/mobile/buckwheat-500.png"
                   width="68"
                   height="86"
                   alt="Банка с гречкой."
                 />
-                <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
-                <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
-                  <dd class="products__description-value products__description-item">500 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Гречка</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">400 ₽</dd>
-                </dl>
+                </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
+                  <dl class="products__description">
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Масса</dt>
+                      <dd class="products__description-value products__description-item">500 г</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Вкус</dt>
+                      <dd class="products__description-value products__description-item">Гречка</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Цена</dt>
+                      <dd class="products__description-value products__description-item">400 ₽</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
               <button
                 class="assortment__button button-primary button"
@@ -169,22 +208,32 @@
             </li>
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
-                <img
-                  class="products__image"
+                <div class="products__wrapper-image">
+                  <img
+                  class="products__image products-image-large"
                   src="./img/catalog/assortment/mobile/buckwheat-1000.png"
                   width="84"
                   height="100"
                   alt="Банка с гречкой побольше."
                 />
-                <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
-                <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
-                  <dd class="products__description-value products__description-item">1000 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Гречка</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">700 ₽</dd>
-                </dl>
+                </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
+                  <dl class="products__description">
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Масса</dt>
+                      <dd class="products__description-value products__description-item">1000 г</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Вкус</dt>
+                      <dd class="products__description-value products__description-item">Гречка</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Цена</dt>
+                      <dd class="products__description-value products__description-item">700 ₽</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
               <button
                 class="assortment__button button-primary button"
@@ -195,22 +244,32 @@
             </li>
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
-                <img
-                  class="products__image"
+                <div class="products__wrapper-image">
+                  <img
+                  class="products__image products-image-small"
                   src="./img/catalog/assortment/mobile/rice-500.png"
                   width="68"
                   height="86"
                   alt="Банка с рисом."
                 />
-                <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
-                <dl class="products__description">
-                  <dt class="products__description-term products__description-item">Масса</dt>
-                  <dd class="products__description-value products__description-item">500 г</dd>
-                  <dt class="products__description-term products__description-item">Вкус</dt>
-                  <dd class="products__description-value products__description-item">Рис</dd>
-                  <dt class="products__description-term products__description-item">Цена</dt>
-                  <dd class="products__description-value products__description-item">500 ₽</dd>
-                </dl>
+                </div>
+                <div class="products__wrapper-info">
+                  <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
+                  <dl class="products__description">
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Масса</dt>
+                      <dd class="products__description-value products__description-item">500 г</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Вкус</dt>
+                      <dd class="products__description-value products__description-item">Рис</dd>
+                    </div>
+                    <div class="products__info">
+                      <dt class="products__description-term products__description-item">Цена</dt>
+                      <dd class="products__description-value products__description-item">500 ₽</dd>
+                    </div>
+                  </dl>
+                </div>
               </div>
               <button
                 class="assortment__button button-primary button"
@@ -236,10 +295,11 @@
       </section>
 
       <section class="additional">
-        <div class="additional__plus-gift">
         <div class="additional__wrapper">
           <h2 class="additional__title">Дополнительные товары</h2>
-          <div class="additional__content-wrapper">
+            <div class="additional__content-and-gift">
+
+
           <ul class="additional__list">
             <li class="additional__item">
                 <div class="additional__item-content">
@@ -290,27 +350,19 @@
                 </button>
             </li>
           </ul>
-        </div>
+
+
+          <div class="additional__gift">
+            <div class="additional__gift-cat"></div>
+            <div class="additional__gift-content">
+              <img class="additional__gift-icon" src="./img/catalog/gift/gift.svg" alt="Подарочная упаковка">
+              <p class="additional__gift-description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
+            </div>
+          </div>
         </div>
 
-        <div class="additional__gift">
-          <div class="additional__gift-wrapper">
-            <div class="additional__gift-cat-wrapper">
-              <div class="additional__gift-cat-background"></div>
-          </div>
-            <h2 class="additional__gift-title visually-hidden">Что нужно для получения подарка</h2>
-            <a class="additional__gift-link additional__gift-link-buy-all buy-all">
-              <img class="additional__gift-buy-all-image" src="./img/catalog/gift/gift.svg" width="78" height="80" alt="#" />
-              <p class="additional__gift-description">
-                Закажите все<br /> и получите чехол для кота в подарок!
-              </p>
-            </a>
-          </div>
         </div>
-      </div>
       </section>
-
-
 
       <section class="location">
         <div class="location__wrapper">
@@ -327,7 +379,13 @@
             </ul>
           </div>
           <div class="location__map">
-            <img class="location__map-pin-image" src="./img/main-page/location/map-pin.png" width="57" height="53" alt="Наше местонахождение на карте" />
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.863030884019!2d30.320913650805704!3d59.93878575734502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xba80b1be36549aba!2sHtml%20Academy!5e0!3m2!1sru!2stn!4v1673386797459!5m2!1sru!2stn"
+            width="100%"
+            height="100%"
+            allowfullscreen
+            title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+            <!-- Пока непонятно как через js убрать лишние элементы на картах и кастомизировать маркер -->
           </div>
         </div>
       </section>
@@ -382,5 +440,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

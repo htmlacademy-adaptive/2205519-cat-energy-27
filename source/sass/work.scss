@@ -2,6 +2,9 @@
 }
 .work__wrapper {
   background-color: #FFFFFF;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 .work__title {
   font-family: 'Oswald';
@@ -105,11 +108,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .work__wrapper {
+    margin-bottom: 136px;
+    margin-left: 110px;
+  }
   .work__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    justify-items: center;
     gap: 0;
+    margin:0;
   }
 }
