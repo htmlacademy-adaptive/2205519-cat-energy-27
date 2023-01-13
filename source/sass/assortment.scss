@@ -1,18 +1,22 @@
 .assortment__wrapper {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-bottom: 50px;
 }
+
 .assortment__title {
-  margin: 27px 27px 49px 20px;
   padding: 0;
-  font-family: 'Oswald';
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
 }
+
 .assortment__list {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -21,9 +25,9 @@
   flex-direction: column;
   gap: 19px;
 }
+
 .assortment__button {
-  display: block;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -32,14 +36,15 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: #ffffff;
+  background-color: #68b738;
   padding: 10px;
   margin: 0 auto;
   width: 100%;
   justify-content: center;
   margin-top: auto;
 }
+
 .assortment__show-all-button {
   display: block;
   color: #444444;
@@ -50,9 +55,8 @@
 
 @media (max-width: $mobile-width-only) {
   .assortment__wrapper {
-    border-top: 1px solid #EBEBEB;
-    border-bottom: 1px solid #EBEBEB;
-    ;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
@@ -60,6 +64,7 @@
   .assortment__wrapper {
     padding: 30px;
   }
+
   .assortment__title {
     font-size: 60px;
     line-height: 60px;
@@ -67,6 +72,7 @@
     margin-left: 0;
     margin-bottom: 163px;
   }
+
   .assortment__list {
     margin: 0;
     padding: 0;
@@ -77,29 +83,25 @@
     gap: 60px;
     row-gap: 141px;
   }
-  .products__wrapper-image {
-
-  }
-
-  .products__wrapper-content {
-
-  }
-  .assortment__show-all-button {
-  }
 }
 
 @media (min-width: $desktop-width) {
   .assortment__wrapper {
-    padding: 100px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
   }
+
   .assortment__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 245px);
+    gap: 0;
+    grid-row-gap: 144px;
+    flex-direction: row;
     align-items: center;
-    gap: 60px;
-    row-gap: 144px;
+    justify-content: space-between;
   }
 }

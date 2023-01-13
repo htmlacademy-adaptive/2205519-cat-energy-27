@@ -1,36 +1,33 @@
 .main-header {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #ffffff;
   min-height: 65px;
 }
+
 .main-header__wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.main-header__logo {
 
-}
 .main-header__logo-image {
   display: block;
   padding: 0;
   margin: 0;
   margin-top: 10px;
 }
+
 .main-header__logo-text {
   position: absolute;
   left: 50%;
   margin-left: -50px;
 }
+
 .main-header__logo-image-text {
   display: block;
   padding: 0;
   margin: 0 auto;
   margin-top: 23px;
-}
-
-@media (max-width: $mobile-width-only) {
-
 }
 
 @media (min-width: $tablet-width) {
@@ -49,6 +46,7 @@
     padding-left: 110px;
     padding-right: 110px;
   }
+
   .main-header__logo-text {
     margin-left: 12px;
   }
@@ -57,14 +55,18 @@
 
 /* Состояния ссылок/элементов */
 @media (min-width: $desktop-width) {
-.main-header__logo {
-  &:hover {
-    opacity: 0.8;
+  .main-header__wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
-  &:active
-   {
-    opacity: 0.6;
+  .main-header__logo {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
-}
 }

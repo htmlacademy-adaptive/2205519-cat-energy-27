@@ -1,28 +1,25 @@
-.client__plus-aim-wrapper {
-
-}
 .client__wrapper {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 100%;
 }
-.client__details {
-}
+
 .client__title {
   margin: 0;
   padding: 0;
   margin-bottom: 37px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
   color: #000000;
 }
+
 .client__description {
   margin: 0;
   padding: 0;
   margin-bottom: 39px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -30,9 +27,10 @@
   text-transform: uppercase;
   color: #000000;
 }
+
 .client__form-label {
   white-space: nowrap;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -42,12 +40,14 @@
   margin-right: 13px;
   align-self: center;
 }
+
 .client__form {
   display: flex;
   flex-direction: column;
   gap: 13px;
   margin-bottom: 46px;
 }
+
 .client__form-group {
   margin: 0;
   padding: 0;
@@ -55,11 +55,13 @@
   min-width: 280px;
   min-height: 45px;
 }
+
 .client__form-field {
   width: 100%;
 }
+
 .client__form-field::placeholder {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +73,7 @@
 }
 
 .client__aim-description {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -86,57 +88,40 @@
   margin: 0;
   border: none;
 }
-.client__aim-title {
-}
+
 .client__aim-list {
   width: 100%;
   margin: 0;
-  padding: 0px;
+  padding: 0;
   list-style-type: none;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 13px;
 }
+
 .client__aim-item {
   display: flex;
   min-height: 30px;
   align-items: center;
 }
-.client__aim-item-choice {
-}
-.client__aim-label {
-
-}
-.client__aim-input {
-}
-.client__aim-mark {
-}
-.client__aim-description {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.12;
-  text-transform: down;
-  color: #222222;
-}
 
 @media (max-width: $mobile-width-only) {
   .client__plus-aim-wrapper {
-    border-top: 1px solid #EBEBEB;
-    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     padding: 27px 20px 19px 20px;
     margin-bottom: 26px;
 
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
       right: 0;
       left: 0;
       height: 1px;
-      background: #D9D9D9;
+      background: #d9d9d9;
       margin: 0 auto;
       margin-top: -134px;
       width: 100%;
@@ -146,17 +131,18 @@
 
 
 @media (min-width: $tablet-width) {
+  .client__wrapper {
+    background-color: #ffffff;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 71px;
+  }
+
   .client__plus-aim-wrapper {
     padding-left: 70px;
     padding-right: 70px;
   }
-  .client {
-  }
-  .client__details {
-  }
-  .client__wrapper {
-    margin-bottom: 71px;
-  }
+
   .client__title {
     font-style: normal;
     font-weight: 400;
@@ -164,33 +150,18 @@
     line-height: 1;
     margin-top: 65px;
   }
+
   .client__description {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
   }
-  .client__form {
-  }
-  .form {
-  }
-  .client__form-group {
-  }
+
   .client__form-label {
     font-size: 20px;
     line-height: 30px;
     margin-right: 20px;
-
-  }
-  .field {
-  }
-  .client__form-field {
-  }
-  .client__form-field-name {
-  }
-  .client__form-field-weight {
-  }
-  .client__form-field-age {
   }
 
   .client__aim-group {
@@ -198,6 +169,7 @@
     padding: 0;
     margin: 0;
   }
+
   .client__aim-list {
     width: 100%;
     margin: 0;
@@ -207,9 +179,10 @@
     display: flex;
     flex-direction: column;
     gap: 13px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
 
     position: relative;
+
     &::before {
       content: "";
       display: none;
@@ -221,9 +194,10 @@
   .client__plus-aim-wrapper {
     padding-left: 110px;
     padding-right: 110px;
+    margin: 0 auto;
+    max-width: 1440px;
   }
-  .client {
-  }
+
   .client__title {
     font-style: normal;
     font-weight: 400;
@@ -233,14 +207,16 @@
     margin-left: 0;
     margin-bottom: 56px;
   }
+
   .client__description {
     margin-left: 0;
     margin-bottom: 66px;
     font-size: 20px;
     line-height: 1.5;
   }
- .client__details {
-  margin: 0;
+
+  .client__details {
+    margin: 0;
     max-width: 1400px;
     display: flex;
     flex-direction: row;
@@ -248,31 +224,10 @@
     align-items: center;
     gap: 80px;
   }
-  .client__wrapper {
-  }
-  .client__title {
-  }
-  .client__description {
-  }
+
   .client__form {
     width: 579px;
     margin: 0;
-  }
-  .form {
-  }
-  .client__form-group {
-  }
-  .client__form-label {
-  }
-  .field {
-  }
-  .client__form-field {
-  }
-  .client__form-field-name {
-  }
-  .client__form-field-weight {
-  }
-  .client__form-field-age {
   }
 
   .client__aim-group {
@@ -290,9 +245,10 @@
     display: flex;
     flex-direction: column;
     gap: 13px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
 
     position: relative;
+
     &::before {
       display: none;
     }

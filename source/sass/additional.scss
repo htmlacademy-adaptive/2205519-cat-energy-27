@@ -1,5 +1,5 @@
 .additional__wrapper {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 35px;
@@ -8,17 +8,19 @@
 .additional__item {
   margin: 0;
 }
+
 .additional__title {
   margin: 0;
   padding: 0;
   margin-bottom: 36px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
   color: #000000;
 }
+
 .additional__list {
   display: flex;
   flex-direction: column;
@@ -27,13 +29,13 @@
   padding: 0;
   list-style-type: none;
 }
+
 .additional__subtitle {
-  text-align: left;
   white-space: nowrap;
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -44,6 +46,7 @@
   text-transform: uppercase;
   color: #222222;
 }
+
 .additional__description {
   width: 100%;
   margin: 0;
@@ -52,8 +55,9 @@
   display: flex;
   justify-content: space-between;
 }
+
 .additional__button {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -62,12 +66,13 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #68B738;
+  color: #ffffff;
+  background-color: #68b738;
   padding: 10px;
   width: 100%;
-  justify-content: center
+  justify-content: center;
 }
+
 .additional__description-item {
   font-size: 14px;
   font-weight: 400;
@@ -76,6 +81,7 @@
   align-items: center;
   color: #444444;
 }
+
 .additional__description-price {
   text-align: right;
 }
@@ -90,75 +96,78 @@
   position: relative;
   width: 280px;
   height: 290px;
-  background-color: #68B738;
+  background-color: #68b738;
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 .additional__gift-cat {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../img/catalog/gift/case.png);
+  background-image: url("../img/catalog/gift/case.png");
   background-size: cover;
   opacity: 20%;
 }
+
 .additional__gift-content {
   padding-top: 59px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
+
 .additional__gift-icon {
   display: inline-block;
   z-index: 5;
   width: 78px;
   height: 80px;
   margin-bottom: 48px;
-
 }
+
 .additional__gift-description {
   margin: 0;
   padding: 0;
   z-index: 5;
   text-align: center;
-  font-family: 'Lato';
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media (max-width: $mobile-width-only) {
   .additional__item {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: 1px;
-    background: #CDCDCD;
-    margin: 0 auto;
-    margin-top: -13px;
-    width: 100%;
-  }
-}
+    position: relative;
 
-.additional__item:last-child {
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: 1px;
-    background: #CDCDCD;
-    margin: 0 auto;
-    margin-top: 19px;
-    width: 100%;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: #cdcdcd;
+      margin: 0 auto;
+      margin-top: -13px;
+      width: 100%;
+    }
   }
-}
+
+  .additional__item:last-child {
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: #cdcdcd;
+      margin: 0 auto;
+      margin-top: 19px;
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -167,6 +176,7 @@
     padding-right: 30px;
     margin-bottom: 69px;
   }
+
   .additional__title {
     font-style: normal;
     font-weight: 400;
@@ -176,137 +186,151 @@
     color: #000000;
     margin-bottom: 80px;
   }
-.additional__item-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.additional__description {
-  justify-content: right;
-  align-items: center;
-}
-.additional__list {
-  padding: 28px 38px;
-  border: 1px solid #CDCDCD;
 
-}
-.additional__item:not(:last-child) {
-  position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    left: 0;
-    height: 1px;
-    background: #CDCDCD;
-    margin: 0 auto;
-    margin-top: 17px;
-    width: 100%;
-  }
-}
-
-
-.additional__content-and-gift {
-  display: flex;
-  flex-direction: column;
-  gap: 69px;
-}
-
-.additional__gift {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  background-color: #68B738;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.additional__gift-cat {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/catalog/gift/case.png);
-  background-size: cover;
-  background-position: center 60%;
-  opacity: 20%;
-}
-.additional__gift-content {
-  width: 80%;
-  margin-left: 77px;
-  margin-top: 57px;
-  padding-top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  justify-content:space-between;
-  justify-self: center;
-}
-.additional__gift-icon {
-  display: inline-block;
-  z-index: 5;
-  width: 80px;
-  height: 82px;
-  margin-bottom: 0;
-
-}
-.additional__gift-description {
-  margin: 0;
-  padding: 0;
-  z-index: 5;
-  text-align: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: #FFFFFF;
-}
-}
-
-@media (min-width: $desktop-width) {
-.additional__wrapper {
-  padding: 0;
-  padding-left: 110px;
-  padding-right: 110px;
-  margin-bottom: 86px;
-}
-
-  .additional__list {
-    width: 100%;
-    padding: 0;
-    padding: 16px 0;
-    border: none;
-    border-top: 1px solid #CDCDCD;
-    border-bottom: 1px solid #CDCDCD;
-  }
-  .additional__item {
-    margin: 0;
+  .additional__item-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .additional__description {
+    justify-content: right;
+    align-items: center;
+  }
+
+  .additional__list {
+    padding: 28px 38px;
+    border: 1px solid #cdcdcd;
+  }
+
   .additional__item:not(:last-child) {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
       right: 0;
       left: 0;
       height: 1px;
-      background: #CDCDCD;
+      background: #cdcdcd;
+      margin: 0 auto;
+      margin-top: 17px;
+      width: 100%;
+    }
+  }
+
+
+  .additional__content-and-gift {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+  }
+
+  .additional__gift {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #68b738;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .additional__gift-cat {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/catalog/gift/case.png");
+    background-size: cover;
+    background-position: center 60%;
+    opacity: 20%;
+  }
+
+  .additional__gift-content {
+    width: 80%;
+    margin-left: 77px;
+    margin-top: 57px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    justify-self: center;
+  }
+
+  .additional__gift-icon {
+    display: inline-block;
+    z-index: 5;
+    width: 80px;
+    height: 82px;
+    margin-bottom: 0;
+  }
+
+  .additional__gift-description {
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    margin-bottom: 86px;
+    max-width: 1440px;
+  }
+
+  .additional__list {
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .additional__item {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .additional__item:not(:last-child) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 1px;
+      background: #cdcdcd;
       margin: 0 auto;
       margin-top: 57px;
       width: 100%;
     }
   }
+
   .additional__item-content {
     margin: 0;
   }
+
   .additional__subtitle {
     min-width: 200px;
     max-width: 325px;
     margin: 0;
   }
+
   .additional__description {
     margin: 0;
     min-width: 200px;
@@ -315,12 +339,10 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .additional__description-price {
-  }
+
   .additional__button {
     width: 244px;
     margin-left: auto;
-
   }
 
 
@@ -335,17 +357,19 @@
     min-width: 245px;
     width: 280px;
     height: auto;
-    background-color: #68B738;
+    background-color: #68b738;
     box-sizing: border-box;
   }
+
   .additional__gift-cat {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../img/catalog/gift/case.png);
+    background-image: url("../img/catalog/gift/case.png");
     background-size: cover;
     opacity: 20%;
   }
+
   .additional__gift-content {
     width: 100%;
     margin: 0;
@@ -353,28 +377,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
+
   .additional__gift-icon {
     display: inline-block;
     z-index: 5;
     width: 78px;
     height: 80px;
     margin-bottom: 48px;
-
   }
+
   .additional__gift-description {
     margin: 0;
     padding: 0;
     z-index: 5;
     text-align: center;
-    font-family: 'Lato';
+    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-
 }
-

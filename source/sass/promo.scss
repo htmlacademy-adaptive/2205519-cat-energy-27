@@ -1,12 +1,11 @@
-.promo {
-}
 .promo__wrapper {
   display: flex;
   flex-direction: column;
-  background:#FFFFFF;
+  background: #ffffff;
   position: relative;
   margin-bottom: 20px;
 }
+
 .promo__cat-wrapper {
   display: block;
   position: absolute;
@@ -14,43 +13,46 @@
   height: 302px;
   background-color: rgba(104, 183, 56, 0.85);
 }
+
 .promo__cat-background {
   opacity: 50%;
   width: 100%;
   height: 302px;
-  background-image: url(../img/main-page/promo/promo-cat.jpg);
+  background-image: url("../img/main-page/promo/promo-cat.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
 .promo__title {
-z-index: 1;
-font-family: 'Oswald';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 1;
-text-align: center;
-color: #FFFFFF;
-padding: 0;
-margin: 0 auto;
-margin-top: 27px;
-margin-bottom: 25px;
+  z-index: 1;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 27px;
+  margin-bottom: 25px;
 }
 
 .promo__slogan {
-z-index: 1;
-font-family: 'Oswald';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1;
-text-transform: uppercase;
-color: #FFFFFF;
-padding: 0;
-margin: 0;
-text-align: center;
+  z-index: 1;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
+
 .promo__button {
   z-index: 1;
   display: block;
@@ -58,6 +60,7 @@ text-align: center;
   padding: 7px 14px;
   min-height: 40px;
 }
+
 .promo__product {
   z-index: 1;
   display: block;
@@ -65,8 +68,9 @@ text-align: center;
   margin: 0 auto;
   margin-top: 130px;
 }
+
 .promo__button-text {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -74,9 +78,7 @@ text-align: center;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-}
-.promo__button-primary-text {
+  color: #ffffff;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -88,9 +90,15 @@ text-align: center;
 }
 
 @media (min-width: $tablet-width) {
+  .promo__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .promo__cat-wrapper {
     display: none;
   }
+
   .promo__title {
     z-index: 2;
     font-weight: 400;
@@ -103,6 +111,7 @@ text-align: center;
     margin-bottom: 41px;
     margin-top: 64px;
   }
+
   .promo__slogan {
     z-index: 2;
     font-weight: 400;
@@ -114,6 +123,7 @@ text-align: center;
     margin-left: 117px;
     margin-bottom: 50px;
   }
+
   .promo__product {
     position: absolute;
     width: 709px;
@@ -124,6 +134,7 @@ text-align: center;
     left: 0;
     right: 0;
   }
+
   .promo__button {
     margin-left: 117px;
     margin-bottom: 500px;
@@ -131,8 +142,8 @@ text-align: center;
     max-width: 350px;
     padding: 14px 26px;
     min-height: 54px;
-
   }
+
   .promo__button-text {
     font-size: 20px;
   }
@@ -141,19 +152,25 @@ text-align: center;
 @media (min-width: $desktop-width) {
   .promo__wrapper {
     padding-top: 0;
+    margin: 0 auto;
     margin-bottom: 100px;
+    max-width: 1440px;
   }
+
   .promo__title {
     margin-left: 190px;
     margin-top: 111px;
   }
+
   .promo__slogan {
     margin-left: 190px;
   }
+
   .promo__button {
     margin-left: 190px;
     margin-bottom: 180px;
   }
+
   .promo__product {
     position: absolute;
     width: 552px;
@@ -165,6 +182,7 @@ text-align: center;
     left: 16%;
     right: 0;
   }
+
   .promo__cat-wrapper {
     display: block;
     position: absolute;
@@ -174,11 +192,12 @@ text-align: center;
     height: 700px;
     background-color: rgba(104, 183, 56, 0.85);
   }
+
   .promo__cat-background {
     opacity: 50%;
     width: 720px;
     height: 700px;
-    background-image: url(../img/main-page/promo/promo-cat.jpg);
+    background-image: url("../img/main-page/promo/promo-cat.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;

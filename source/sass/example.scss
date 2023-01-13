@@ -1,10 +1,11 @@
 .example {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
+
 .example__wrapper {
   padding: 25px 20px;
-  box-sizing: border-box;
 }
+
 .example__title {
   margin: 0;
   padding: 0;
@@ -15,19 +16,19 @@
   line-height: 40px;
   color: #000000;
 }
-.example__content {
-}
+
 .example__content-description {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: 'Lato';
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
+
 .example__list {
   margin: 0;
   padding: 0;
@@ -39,18 +40,22 @@
   grid-template-rows: 1fr;
   gap: 32px;
 }
+
 .example__list-item {
   min-width: 124px;
 }
+
 .example__list-expenses {
   grid-column-start: 1;
   grid-column-end: 3;
 }
+
 .example__fieldset-content {
   transform: rotate(180deg);
 }
+
 .example__fieldset-title {
-  font-family: 'Lato';
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -61,10 +66,11 @@
   color: #444444;
   transform: rotate(180deg);
 }
+
 .example__fieldset-content-text {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -73,11 +79,12 @@
   color: #000000;
   transform: rotate(180deg);
 }
+
 .example__content-expenses {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -86,8 +93,7 @@
   text-transform: uppercase;
   color: #000000;
 }
-.example__content-amount {
-}
+
 .example__cat-slider {
   width: 280px;
   height: 256px;
@@ -97,6 +103,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .example__cat-slider-button {
   display: block;
   margin: auto;
@@ -105,82 +112,83 @@
 
 @media (min-width: $tablet-width) {
   .example__wrapper {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
   }
-  .example__content {
-  }
+
   .example__content-description {
     font-size: 16px;
     line-height: 24px;
   }
+
   .example__list {
     grid-template-columns: 1fr 1fr 2fr;
     gap: 32px;
   }
-  .example__list-item {
-  }
+
   .example__list-expenses {
     grid-column-start: 3;
     align-self: center;
     justify-self: end;
     width: 250px;
   }
-  .example__fieldset-content {
-  }
+
   .example__fieldset-title {
     font-size: 14px;
     line-height: 14px;
   }
+
   .example__fieldset-content-text {
     font-size: 30px;
     line-height: 37px;
   }
+
   .example__content-expenses {
     font-size: 20px;
     line-height: 30px;
     text-align: right;
   }
+
   .example__cat-slider {
     width: 560px;
     height: 512px;
-  }
-  .example__cat-slider-button {
   }
 }
 
 @media (min-width: $desktop-width) {
   .example {
-    background-color: #F2f2f2;
+    background-color: #f2f2f2;
   }
+
   .example__wrapper {
-    background-color: #F2f2f2;
+    background-color: #f2f2f2;
     position: relative;
-    padding-left: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
+
   .example__content {
     width: 436px;
     min-height: 317px;
-    margin: 70px 70px 50px 110px;
   }
+
   .example__title {
-    margin-left: 110px;
+    margin: 0;
     margin-top: -136px;
     margin-bottom: 121px;
   }
-  .example__content {
-  }
-  .example__content-description {
-  }
+
   .example__list {
     grid-template-columns: 1fr 1fr;
     margin: 0;
   }
-  .example__list-item {
-  }
+
   .example__list-expenses {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -188,17 +196,11 @@
     justify-self: start;
     width: 250px;
   }
-  .example__fieldset-content {
-  }
-  .example__fieldset-title {
-  }
-  .example__fieldset-content-text {
-  }
+
   .example__content-expenses {
     white-space: nowrap;
   }
-  .example__content-amount {
-  }
+
   .example__cat-slider {
     position: absolute;
     width: 560px;
@@ -207,7 +209,5 @@
     top: 0;
     margin: 0;
     margin-top: -136px;
-  }
-  .example__cat-slider-button {
   }
 }
