@@ -88,9 +88,11 @@
     min-width: 280px;
     max-width: 400px;
   }
+
   .promo__wrapper {
     position: relative;
   }
+
   .promo__title {
     white-space: nowrap;
     position: absolute;
@@ -119,10 +121,9 @@
     transform: translateX(-50%);
   }
 
-
-.promo__cat-wrapper {
-  margin-bottom: 138px;
-}
+  .promo__cat-wrapper {
+    margin-bottom: 138px;
+  }
 }
 
 @media (min-width: $tablet-width) {
