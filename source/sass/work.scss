@@ -24,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 20px;
 }
 
 .work__item {
@@ -75,6 +76,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 37px;
   }
 
   .work__item:nth-child(2n) {

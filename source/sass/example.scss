@@ -102,6 +102,7 @@
   background-image: url("../img/main-page/example/tablet-slide-before.png");
   background-repeat: no-repeat;
   background-size: cover;
+  /* Нужно ли мне адаптировать контентные изображения слайдера, если его не получится сделать без js и в ближайшее время он не понадобится?  */
 }
 
 .example__cat-slider-button {
