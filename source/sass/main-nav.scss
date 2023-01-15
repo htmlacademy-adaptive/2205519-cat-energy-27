@@ -1,93 +1,268 @@
 .main-nav {
-  z-index: 2;
+  min-height: 65px;
+  background-color: #ffffff;
+
   &__toggle {
     display: block;
-    margin-left: auto;
-  }
-
-  &__wrapper {
+    width: 65px;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
   }
 
   &__list {
+    z-index: 2;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    background-color: #f2f2f2;
   }
 
   &__item {
-  font-family: 'Oswald';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-bottom: 46px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
   }
 
   &__link {
+    display: block;
     text-decoration: none;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    border-top: 0.5px solid #e6e6e6;
+    border-bottom: 0.5px solid #e6e6e6;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 7px 0 0 rgba(0, 0, 0, 0.3),
+    0 14px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    z-index: 2;
+    content: "";
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    width: 26px;
+    height: 2px;
+    background-color: #000000;
   }
 
-  &__item:last-child {
-    margin-bottom: 0;
+  &::before {
+    transform: rotate(45deg);
+    background-color: #000000;
   }
 
-  &__item--current {
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
 
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-header__logo-image {
+    margin-left: 20px;
+  }
+
+  .main-nav__link {
+    text-align: center;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__item a {
+    padding-right: 21px;
+    padding-left: 21px;
+    text-align: center;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs {
+    margin-bottom: 200px;
+  }
+}
 
 @media (min-width: $tablet-width) {
+  .main-header__logo-text {
+    display: none;
+    margin-left: 12px;
+  }
+
   .main-nav__link {
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
+    border: none;
   }
+
   .main-nav__wrapper {
     display: flex;
     justify-content: end;
     min-width: 470px;
     margin: 0 auto;
   }
-  .main-header__logo-text {
-    margin-left: 12px;
+
+  .main-nav__list {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 560px; /*  Сменить после добавления шрифтов  */
+    background: none;
+    border: none;
   }
+
+  .main-nav__item {
+    margin-right: 35px;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+
   .main-nav__toggle {
     display: none;
   }
-  .main-nav__list {
-    display: flex;
-    gap: 35px;
+
+  .main-nav__item--current {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background: #68b738;
+      margin-top: -10px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-header__logo-text {
+    display: none;
+    margin-left: 12px;
+  }
+
   .main-nav__link {
 
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #000;
+    color: #000000;
   }
+
   .main-nav__wrapper {
     display: flex;
     justify-content: end;
     min-width: 500px;
     margin: 0 auto;
   }
-  .main-header__logo-text {
-    margin-left: 12px;
-  }
+
   .main-nav__toggle {
     display: none;
   }
+
   .main-nav__list {
+    width: 650px;
     display: flex;
-    gap: 35px;
+    margin-right: -50px; /* декоративный стиль, нужно будет убрать после добавления шрифтов */
+  }
+
+  .main-nav__item--current {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      left: 0;
+      height: 2px;
+      background: #68b738;
+      margin-top: -20px;
+    }
+  }
+}
+
+
+/* Состояния ссылок/элементов */
+.main-nav__item a {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item--current a {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
   }
 }
