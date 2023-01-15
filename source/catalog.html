@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media=" (min-width: 1200px) " srcset="./img/main-page/header/header-logo-desktop.svg" width="202" height="60">
+          <source media=" (min-width: 768px) " srcset="./img/main-page/header/header-logo-tablet.svg" width="174" height="52">
         <img class="main-header__logo-image" src="./img/main-page/header/header-logo-mobile.svg" width="33" height="38" alt="Питание для котов Cat Energy." />
+      </picture>
       </a>
       <a class="main-header__logo-text">
         <img class="main-header__logo-image-text" src="./img/main-page/header/header-logo-mobile-text.svg" width="101" height="18" alt="Cat Energy." />
@@ -46,7 +54,10 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
-                  <img class="products__image products-image-small" src="./img/catalog/assortment/mobile/chicken-500.png" width="68" height="86" alt="Банка с курицей." />
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/chicken-500.png 1x, ./img/catalog/assortment/tablet-desktop/chicken-500@2x.png 2x">
+                  <img class="products__image products-image-small" src="./img/catalog/assortment/mobile/chicken-500.png" srcset="./img/catalog/assortment/mobile/chicken-500@2x.png 2x" width="68" height="86" alt="Банка с курицей." />
+                  </picture>
                   </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />PRO 500 г</h2>
@@ -76,13 +87,17 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/chicken-1000.png 1x, ./img/catalog/assortment/tablet-desktop/chicken-1000@2x.png 2x">
                   <img
                   class="products__image products-image-large"
                   src="./img/catalog/assortment/mobile/chicken-1000.png"
+                  srcset="./img/catalog/assortment/mobile/chicken-1000@2x.png 2x"
                   width="84"
                   height="100"
                   alt="Банка с курицей побольше."
                 />
+                </picture>
                 </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
@@ -113,13 +128,17 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/fish-500.png 1x, ./img/catalog/assortment/tablet-desktop/fish-500@2x.png 2x">
                   <img
                   class="products__image products-image-small"
                   src="./img/catalog/assortment/mobile/fish-500.png"
+                  srcset="./img/catalog/assortment/mobile/fish-500@2x.png 2x"
                   width="68"
                   height="86"
                   alt="Банка с рыбой."
                 />
+                </picture>
                 </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />PRO 500 г</h2>
@@ -144,7 +163,10 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
-                  <img class="products__image products-image-large" src="./img/catalog/assortment/mobile/fish-1000.png" width="84" height="100" alt="Банка с рыбой побольше." />
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/fish-1000.png 1x, ./img/catalog/assortment/tablet-desktop/fish-1000@2x.png 2x">
+                  <img class="products__image products-image-large" src="./img/catalog/assortment/mobile/fish-1000.png" srcset="./img/catalog/assortment/mobile/fish-1000@2x.png 2x" width="84" height="100" alt="Банка с рыбой побольше." />
+                  </picture>
                 </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
@@ -174,13 +196,17 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/buckwheat-500.png 1x, ./img/catalog/assortment/tablet-desktop/buckwheat-500@2x.png 2x">
                   <img
                   class="products__image products-image-small"
                   src="./img/catalog/assortment/mobile/buckwheat-500.png"
+                  srcset="./img/catalog/assortment/mobile/buckwheat-500@2x.png 2x"
                   width="68"
                   height="86"
                   alt="Банка с гречкой."
                 />
+                </picture>
                 </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
@@ -210,13 +236,17 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/buckwheat-1000.png 1x, ./img/catalog/assortment/tablet-desktop/buckwheat-1000@2x.png 2x">
                   <img
                   class="products__image products-image-large"
                   src="./img/catalog/assortment/mobile/buckwheat-1000.png"
+                  srcset="./img/catalog/assortment/mobile/buckwheat-1000@2x.png 2x"
                   width="84"
                   height="100"
                   alt="Банка с гречкой побольше."
                 />
+                </picture>
                 </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />PRO 1000 г</h2>
@@ -246,13 +276,17 @@
             <li class="products__item">
               <div class="products__wrapper products__wrapper-content">
                 <div class="products__wrapper-image">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="./img/catalog/assortment/tablet-desktop/rice-500.png 1x, ./img/catalog/assortment/tablet-desktop/rice-500@2x.png 2x">
                   <img
                   class="products__image products-image-small"
                   src="./img/catalog/assortment/mobile/rice-500.png"
+                  srcset="./img/catalog/assortment/mobile/rice-500@2x.png 2x"
                   width="68"
                   height="86"
                   alt="Банка с рисом."
                 />
+                </picture>
                 </div>
                 <div class="products__wrapper-info">
                   <h2 class="products__title">Cat Energy <br />SLIM 500 г</h2>
