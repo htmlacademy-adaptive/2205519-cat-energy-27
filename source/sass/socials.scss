@@ -6,4 +6,11 @@
   display: flex;
   gap: 24px;
   justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .socials__list {
+    margin-bottom: 0;
+  }
 }

@@ -10,10 +10,22 @@
   align-self: center;
 }
 
-.copyright__logo {
+.copyright__link {
   margin-left: auto;
 }
 
+.copyright__logo {
+  vertical-align: middle;
+}
+
+.copyright__link-academy {
+  text-decoration: none;
+  color: #444444;
+}
+
+.copyright__academy {
+  display: none;
+}
 
 @media (min-width: $tablet-width) {
   .copyright__author {
