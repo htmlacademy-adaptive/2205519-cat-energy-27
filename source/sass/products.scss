@@ -102,6 +102,32 @@
   margin-bottom: 23px;
 }
 
+.products__button {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.products__show-all-button {
+  color: #444444;
+  background-color: #f2f2f2;
+  width: 100%;
+  margin-top: auto;
+}
+
 @media (max-width: $mobile-width-only) {
   .products__item {
     width: 100%;
