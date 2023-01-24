@@ -103,10 +103,6 @@
     display: none;
   }
 
-  .main-header__logo-image {
-    margin-left: 20px;
-  }
-
   .main-nav__link {
     text-align: center;
   }
@@ -156,7 +152,7 @@
 
   .main-nav__wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     min-width: 470px;
     margin: 0 auto;
   }
@@ -165,7 +161,7 @@
     position: static;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 560px; /*  Сменить после добавления шрифтов  */
     background: none;
     border: none;
@@ -215,7 +211,7 @@
 
   .main-nav__wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     min-width: 500px;
     margin: 0 auto;
   }
@@ -227,7 +223,6 @@
   .main-nav__list {
     width: 650px;
     display: flex;
-    margin-right: -50px; /* декоративный стиль, нужно будет убрать после добавления шрифтов */
   }
 
   .main-nav__item--current {
