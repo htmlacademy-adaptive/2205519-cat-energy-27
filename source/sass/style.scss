@@ -1,4 +1,9 @@
 @import "./global/variables.scss";
+@import "body";
+@import "fonts";
+@import "link";
+@import "cat";
+@import "button";
 @import "button-primary";
 @import "button-secondary";
 @import "main-header";
@@ -17,72 +22,7 @@
 @import "products";
 @import "field";
 @import "textarea";
-@import "control";
+@import "nutrition";
 @import "socials";
 @import "copyright";
 @import "main-nav";
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 500;
-  font-style: normal;
-  src:
-    url("../fonts/oswald/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswald/oswaldmedium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: normal;
-  src:
-    url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswald/oswaldregular.woff");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-weight: 400;
-  font-style: normal;
-  src:
-    url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Regular.woff") format("woff");
-}
-
-body {
-  margin: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-a {
-  cursor: pointer;
-}
-
-.button {
-  cursor: pointer;
-  border: none;
-}
-
-.button-primary {
-  &:hover {
-    background-color: #5eaa2f;
-  }
-
-  &:active span {
-    opacity: 0.3;
-  }
-}
-
-.button-secondary {
-  &:hover {
-    background-color: #ebebeb;
-  }
-
-  &:active span {
-    opacity: 0.3;
-  }
-}

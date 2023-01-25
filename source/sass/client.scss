@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 37px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 39px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -30,7 +30,7 @@
 
 .client__form-label {
   white-space: nowrap;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -58,10 +58,20 @@
 
 .client__form-field {
   width: 100%;
+  border: 1px solid #e7e7e7;
+  padding: 11px 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  align-items: center;
+  text-transform: uppercase;
+  color: #222222;
 }
 
 .client__form-field::placeholder {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -69,15 +79,14 @@
   align-items: center;
   text-transform: uppercase;
   color: #444444;
-  padding-left: 20px;
 }
 
 .client__aim-description {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #222222;
 }
@@ -104,6 +113,7 @@
   display: flex;
   min-height: 30px;
   align-items: center;
+  box-sizing: border-box;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -129,7 +139,6 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .client__wrapper {
     background-color: #ffffff;
@@ -144,16 +153,12 @@
   }
 
   .client__title {
-    font-style: normal;
-    font-weight: 400;
     font-size: 60px;
     line-height: 1;
     margin-top: 65px;
   }
 
   .client__description {
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
   }
@@ -162,6 +167,22 @@
     font-size: 20px;
     line-height: 30px;
     margin-right: 20px;
+  }
+
+  .client__form-field {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .client__form-field::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .client__aim-group {
@@ -180,13 +201,21 @@
     flex-direction: column;
     gap: 13px;
     border: 1px solid #d9d9d9;
-
     position: relative;
 
     &::before {
       content: "";
       display: none;
     }
+  }
+
+  .client__aim-item {
+    min-height: 40px;
+  }
+
+  .client__aim-description {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -199,10 +228,6 @@
   }
 
   .client__title {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 1;
     margin-top: 73px;
     margin-left: 0;
     margin-bottom: 56px;
@@ -211,8 +236,6 @@
   .client__description {
     margin-left: 0;
     margin-bottom: 66px;
-    font-size: 20px;
-    line-height: 1.5;
   }
 
   .client__details {
@@ -220,18 +243,19 @@
     max-width: 1400px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 80px;
   }
 
   .client__form {
-    width: 579px;
+    width: 100%;
     margin: 0;
+    gap: 20px;
   }
 
   .client__aim-group {
-    width: 579px;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -252,5 +276,73 @@
     &::before {
       display: none;
     }
+  }
+}
+
+// Это скрытый базовый чекбокс
+.client__aim-input {
+  appearance: none;
+}
+
+// Это лейбл, что содержит в себе скрытый чекбокс, текст и иконку чекбокса
+.client__aim-label {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+}
+
+// Это чекбокс кастомный
+.client__aim-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("../img/form/radio-empty.svg");
+  margin-left: -46px;
+  margin-top: -3px;
+  vertical-align: middle;
+}
+
+.client__aim-input:checked + .client__aim-mark {
+  background: url("../img/form/radio-enabled.svg");
+}
+
+//hover
+.client__aim-input:empty:hover + .client__aim-mark {
+  background: url("../img/form/radio-empty-hover.svg");
+}
+
+.client__aim-input:checked:hover + .client__aim-mark {
+  background: url("../img/form/radio-enabled-hover.svg");
+}
+
+//disabled
+.client__aim-input:disabled + .client__aim-mark {
+  background: url("../img/form/radio-empty.svg");
+  opacity: 0.3;
+}
+
+.client__aim-input:checked:disabled.client__aim-mark {
+  background: url("../img/form/radio-enabled.svg");
+  opacity: 0.3;
+}
+
+
+@media (min-width: $tablet-width) {
+  .client__aim-label {
+    padding-left: 60px;
+    white-space: nowrap;
+  }
+
+  .client__aim-description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .client__aim-mark {
+    width: 40px;
+    height: 40px;
+    margin-left: -68px;
+    margin-top: -5px;
   }
 }

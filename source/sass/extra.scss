@@ -10,7 +10,7 @@
   padding: 0;
   padding-left: 20px;
   margin-bottom: 34px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -18,7 +18,6 @@
   color: #000000;
   white-space: nowrap;
   text-align: left;
-  overflow: hidden;
   position: relative;
 
   &::after {
@@ -26,14 +25,13 @@
     content: "";
     position: relative;
     display: inline-block;
+    width: 9999px;
     height: 2px;
-
+    left: 0.5em;
+    margin: 0 50% 0 0;
     vertical-align: middle;
     background-clip: content-box;
     border-bottom: 2px solid #68b738;
-    width: 100%;
-    left: 0.5em;
-    margin: 0 50% 0 0;
   }
 }
 
@@ -59,25 +57,11 @@
   width: 100%;
 }
 
-.control__input {
-  margin: 0;
-  margin-right: 16px;
-}
-
-.control-label {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.12;
-  text-transform: uppercase;
-  color: #000000;
-}
-
 .extra__button {
   margin-top: 22px;
   width: 100%;
-  font-family: "Oswald", sans-serif;
+  min-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -97,7 +81,7 @@
   margin-top: 9px;
   padding: 0;
   text-align: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -121,33 +105,6 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 1;
-
-    &::after,
-    &::before {
-      padding-left: 30px;
-      content: "";
-      position: relative;
-      display: inline-block;
-      width: 50%;
-      height: 2px;
-
-      vertical-align: middle;
-      background-clip: content-box;
-      border-bottom: 2px solid #68b738;
-    }
-
-    &::before {
-      position: absolute;
-      left: -50%;
-      top: 50%;
-      right: 5em;
-    }
-
-    &::after {
-      width: 100%;
-      left: 0.5em;
-      margin: 0 50% 0 0;
-    }
   }
 
   .extra__list {
@@ -164,6 +121,8 @@
   }
 
   .extra__remark {
+    font-size: 16px;
+    line-height: 1;
     text-align: start;
     margin: 0;
     margin-top: 22px;

@@ -1,14 +1,48 @@
 .textarea {
   min-width: 280px;
+  min-height: 150px;
   padding: 9px 15px;
-}
-
-.textarea::placeholder {
-  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #444444;
+  resize: none;
+}
+
+.textarea::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .textarea {
+    min-height: 174px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .textarea::placeholder {
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #444444;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }

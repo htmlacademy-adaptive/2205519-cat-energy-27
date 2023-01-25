@@ -12,7 +12,7 @@
   }
 
   &__list {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     top: 65px;
     left: 0;
@@ -24,7 +24,7 @@
   }
 
   &__item {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -162,7 +162,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    width: 560px; /*  Сменить после добавления шрифтов  */
     background: none;
     border: none;
   }
@@ -189,7 +188,7 @@
       left: 0;
       height: 2px;
       background: #68b738;
-      margin-top: -10px;
+      margin-top: -20px;
     }
   }
 }
