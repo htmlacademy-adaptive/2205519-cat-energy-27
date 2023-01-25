@@ -12,7 +12,7 @@
   }
 
   &__list {
-    z-index: 2;
+    z-index: 3;
     position: absolute;
     top: 65px;
     left: 0;
@@ -24,7 +24,7 @@
   }
 
   &__item {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -103,10 +103,6 @@
     display: none;
   }
 
-  .main-header__logo-image {
-    margin-left: 20px;
-  }
-
   .main-nav__link {
     text-align: center;
   }
@@ -156,7 +152,7 @@
 
   .main-nav__wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     min-width: 470px;
     margin: 0 auto;
   }
@@ -165,8 +161,7 @@
     position: static;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 560px; /*  Сменить после добавления шрифтов  */
+    justify-content: flex-end;
     background: none;
     border: none;
   }
@@ -193,7 +188,7 @@
       left: 0;
       height: 2px;
       background: #68b738;
-      margin-top: -10px;
+      margin-top: -20px;
     }
   }
 }
@@ -215,7 +210,7 @@
 
   .main-nav__wrapper {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     min-width: 500px;
     margin: 0 auto;
   }
@@ -227,7 +222,6 @@
   .main-nav__list {
     width: 650px;
     display: flex;
-    margin-right: -50px; /* декоративный стиль, нужно будет убрать после добавления шрифтов */
   }
 
   .main-nav__item--current {

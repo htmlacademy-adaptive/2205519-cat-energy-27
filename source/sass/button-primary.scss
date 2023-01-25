@@ -1,3 +1,12 @@
 .button-primary {
+  color: #ffffff;
   background-color: #68b738;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

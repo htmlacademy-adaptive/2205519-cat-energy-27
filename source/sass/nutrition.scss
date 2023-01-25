@@ -1,0 +1,75 @@
+.nutrition__label {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+// Это скрытый базовый чекбокс
+.nutrition__input {
+  appearance: none;
+}
+
+// Это лейбл, что содержит в себе скрытый чекбокс, текст и иконку чекбокса
+.nutrition {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  padding-left: 38px;
+}
+
+// Это чекбокс кастомный
+.nutrition__mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("../img/form/checkbox-empty.svg");
+  margin-left: -46px;
+  margin-top: -3px;
+}
+
+.nutrition__input:checked + .nutrition__mark {
+  background: url("../img/form/checkbox-checked.svg");
+}
+
+//hover
+.nutrition__input:empty:hover + .nutrition__mark {
+  background: url("../img/form/checkbox-empty-hover.svg");
+}
+
+.nutrition__input:checked:hover + .nutrition__mark {
+  background: url("../img/form/checkbox-checked-hover.svg");
+}
+
+//disabled
+.nutrition__input:disabled + .nutrition__mark {
+  background: url("../img/form/checkbox-empty.svg");
+  opacity: 0.3;
+}
+
+.nutrition__input:checked:disabled.nutrition__mark {
+  background: url("../img/form/checkbox-checked.svg");
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .nutrition {
+    padding-left: 60px;
+    white-space: nowrap;
+  }
+
+  .nutrition__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nutrition__mark {
+    width: 40px;
+    height: 40px;
+    margin-left: -68px;
+    margin-top: -5px;
+  }
+}

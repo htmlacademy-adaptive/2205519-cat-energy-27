@@ -33,7 +33,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 18px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -61,7 +61,7 @@
 }
 
 .products__description-item {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -73,7 +73,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -87,7 +87,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 21px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -103,18 +103,16 @@
 }
 
 .products__button {
-  font-family: "Oswald", sans-serif;
+  height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #68b738;
-  padding: 10px;
   margin: 0 auto;
   width: 100%;
   justify-content: center;
@@ -122,17 +120,17 @@
 }
 
 .products__show-all-button {
-  color: #444444;
-  background-color: #f2f2f2;
-  width: 100%;
-  margin-top: auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 @media (max-width: $mobile-width-only) {
   .products__item {
     width: 100%;
     box-sizing: border-box;
-
     position: relative;
 
     &::before {
@@ -146,6 +144,10 @@
       margin-top: -20px;
       width: 100%;
     }
+  }
+
+  .products__show-more-description br {
+    display: none;
   }
 }
 
@@ -255,6 +257,10 @@
     padding-top: 52px;
   }
 
+  .products__show-all-button {
+    line-height: 0;
+  }
+
   .products__icon {
     width: 60px;
     height: 60px;
@@ -282,8 +288,18 @@
   }
 
   .products__description {
+    box-sizing: border-box;
     width: 100%;
     gap: 16px;
+    padding: 0 5px;
+  }
+
+  .products__button {
+    min-width: 168px;
+  }
+
+  .products__show-all-button {
+    min-width: 168px;
   }
 
   .products__info {
@@ -300,10 +316,6 @@
       margin-top: 24px;
       width: 100%;
     }
-  }
-
-  .products__description-item {
-    line-height: 1;
   }
 
   .products__show-more {

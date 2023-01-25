@@ -1,4 +1,12 @@
 .button-secondary {
   color: #444444;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

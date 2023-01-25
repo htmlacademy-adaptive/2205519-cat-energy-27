@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="source/favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="source/manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__wrapper">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="index.html">
         <picture>
           <source media=" (min-width: 1200px) " srcset="./img/main-page/header/header-logo-desktop.svg" width="202" height="60">
           <source media=" (min-width: 768px) " srcset="./img/main-page/header/header-logo-tablet.svg" width="174" height="52">
@@ -77,21 +77,21 @@
             <ul class="client__aim-list">
               <li class="client__aim-item">
                 <label class="client__aim-item-choice client__aim-label">
-                  <input class="client__aim-input visually-hidden" type="radio" name="aim-group" checked />
+                  <input class="client__aim-input" type="radio" name="aim-group" checked />
                   <span class="client__aim-mark"></span>
                   <span class="client__aim-description">Похудение</span>
                 </label>
               </li>
               <li class="client__aim-item">
                 <label class="client__aim-item-choice client__aim-label">
-                  <input class="client__aim-input visually-hidden" type="radio" name="aim-group" />
+                  <input class="client__aim-input" type="radio" name="aim-group" />
                   <span class="client__aim-mark"></span>
                   <span class="client__aim-description">Набор массы</span>
                 </label>
               </li>
               <li class="client__aim-item">
                 <label class="client__aim-item-choice client__aim-label">
-                  <input class="client__aim-input visually-hidden" type="radio" name="aim-group" />
+                  <input class="client__aim-input" type="radio" name="aim-group" />
                   <span class="client__aim-mark"></span>
                   <span class="client__aim-description">Не знаю (нужен ваш совет)</span>
                 </label>
@@ -131,7 +131,7 @@
       <section class="comment">
         <h2 class="comment__title">Комментарий</h2>
         <div class="comment__wrapper">
-          <textarea class="comment__textarea textarea" placeholder="Расскажите обо всех повАдках кота"></textarea>
+          <textarea class="comment__textarea textarea" aria-label="Текстовое поле для ввода данных" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </div>
       </section>
 
@@ -141,36 +141,36 @@
           <fieldset class="extra__fieldset extra__group">
             <ul class="extra__list">
               <li class="extra__item">
-                <label class="extra__label control">
-                  <input class="control__input" type="checkbox" name="sweetener" checked />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Сахарозаменитель</span>
+                <label class="extra__label nutrition">
+                  <input class="nutrition__input" type="checkbox" name="sweetener" checked />
+                  <span class="nutrition__mark"></span>
+                  <span class="nutrition__label">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="extra__item">
-                <label class="extra__label control">
-                  <input class="control__input" type="checkbox" name="water" />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Питьевая вода</span>
+                <label class="extra__label nutrition">
+                  <input class="nutrition__input" type="checkbox" name="water" />
+                  <span class="nutrition__mark"></span>
+                  <span class="nutrition__label">Питьевая вода</span>
                 </label>
               </li>
               <li class="extra__item">
-                <label class="extra__label control">
-                  <input class="control__input" type="checkbox" name="milk" />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Молоко</span>
+                <label class="extra__label nutrition">
+                  <input class="nutrition__input" type="checkbox" name="milk" />
+                  <span class="nutrition__mark"></span>
+                  <span class="nutrition__label">Молоко</span>
                 </label>
               </li>
               <li class="extra__item">
-                <label class="extra__label control">
-                  <input class="control__input" type="checkbox" name="vitamins" />
-                  <span class="control-mark"></span>
-                  <span class="control-label">Витамины</span>
+                <label class="extra__label nutrition">
+                  <input class="nutrition__input" type="checkbox" name="vitamins"/>
+                  <span class="nutrition__mark"></span>
+                  <span class="nutrition__label">Витамины</span>
                 </label>
               </li>
               <li class="extra__item extra__item-button">
               <button class="extra__button extra__wrapper-button-primary button-primary button" type="button">
-                Отправить заявку
+                <span>Отправить заявку</span>
               </button>
             </li>
               <li class="extra__item extra__item-remark">
@@ -252,7 +252,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru" aria-label="Сайт HTML Academy">
             <span class="copyright__academy">HTML Academy</span>
           <svg class="copyright__logo" width="27" height="34">
-            <use href="./img/sprite.svg#academy-icon"></use>
+            <use href="./img/sprite.svg#footer-academy-logo"></use>
           </svg>
           </a>
         </div>
