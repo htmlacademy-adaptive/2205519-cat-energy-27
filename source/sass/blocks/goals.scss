@@ -94,6 +94,13 @@
   }
 }
 
+.goals__link:hover {
+  svg {
+    transform: scaleX(1.3);
+  }
+}
+
+
 .goals__link-icon {
   display: inline-block;
   padding: 0;
@@ -277,11 +284,11 @@
   }
 
   .goals__description {
-    max-width: 440px;
+    max-width: none;
     font-size: 16px;
     line-height: 1.5;
     margin-left: 52px;
-    margin-right: 61px;
+    margin-right: 52px;
     margin-bottom: 23px;
   }
 
@@ -306,7 +313,6 @@
     align-items: center;
     margin-left: 52px;
     margin-bottom: 55px;
-    margin-top: auto;
   }
 
   .goals__link-catalog {

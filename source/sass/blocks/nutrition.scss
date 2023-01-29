@@ -55,6 +55,11 @@
   opacity: 0.3;
 }
 
+//focus
+.nutrition__input:focus + .nutrition__mark {
+  outline: 2px solid #444444;
+}
+
 @media (min-width: $tablet-width) {
   .nutrition {
     padding-left: 60px;
