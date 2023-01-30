@@ -1,0 +1,23 @@
+.slider {
+  position: relative;
+  display: inline-grid;
+}
+
+.slider__item {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  clip-path: inset(0 0 0 var(--slider-value, 50%));
+}
+
+.slider__item:first-of-type {
+  clip-path: inset(0 calc(100% - var(--slider-value, 50%)) 0 0);
+}
+
+.slider__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

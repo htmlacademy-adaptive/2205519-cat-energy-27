@@ -75,6 +75,39 @@
   line-height: 1.12;
   text-transform: uppercase;
   color: #222222;
+
+  /* Input status */
+  &:empty {
+    outline: 1px solid #e7e7e7;
+  }
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 1px solid #ff8282;
+  }
+
+  &:invalid:not(:placeholder-shown):hover,
+  .field:invalid:not(:placeholder-shown):focus {
+    outline: 2px solid #ff8282;
+  }
+
+  &:disabled {
+    background-color: #e7e7e7;
+    opacity: 0.65;
+  }
+}
+
+.owner__input svg {
+  &:active {
+    fill: #68b738;
+  }
 }
 
 .owner__input::placeholder {
@@ -110,12 +143,12 @@
   .owner__wrapper {
     padding-left: 70px;
     padding-right: 70px;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   .owner__title {
     padding-left: 70px;
-    margin-bottom: 76px;
+    margin-bottom: 63px;
     white-space: nowrap;
     font-weight: 400;
     font-size: 36px;
@@ -162,7 +195,7 @@
   .owner__form-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 27px;
   }
 
   .owner__label {
@@ -181,13 +214,13 @@
     margin: 0 auto;
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 67px;
+    margin-bottom: 70px;
     max-width: 1440px;
   }
 
   .owner__title {
     margin: 0 auto;
-    margin-bottom: 76px;
+    margin-bottom: 62px;
     max-width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
@@ -207,8 +240,8 @@
   }
 
   .owner__form-wrapper {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     justify-content: center;
     align-items: center;
