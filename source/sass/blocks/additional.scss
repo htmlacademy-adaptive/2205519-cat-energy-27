@@ -2,7 +2,7 @@
   background-color: #ffffff;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .additional__item {
@@ -12,7 +12,7 @@
 .additional__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 36px;
+  margin-bottom: 48px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -109,7 +109,7 @@
   height: 100%;
   background-image: image-set(url("../img/catalog/gift/mobile-cat.png") 1x, url("../img/catalog/gift/mobile-cat@2x.png") 2x);
   background-size: cover;
-  opacity: 20%;
+  opacity: 15%;
 }
 
 .additional__gift-content {
@@ -176,7 +176,7 @@
   .additional__wrapper {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 69px;
+    margin-bottom: 77px;
   }
 
   .additional__title {
@@ -187,6 +187,7 @@
     text-align: left;
     color: #000000;
     margin-bottom: 80px;
+    padding-left: 37px;
   }
 
   .additional__subtitle {
@@ -204,15 +205,28 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    margin-bottom: 12px;
   }
 
   .additional__description {
     justify-content: right;
     align-items: center;
+    margin-bottom: 7px;
+    min-width: 100px;
+  }
+
+  .additional__item {
+    min-height: 108px;
+  }
+
+  .additional__description-term {
+    margin-right: 13px;
   }
 
   .additional__list {
-    padding: 28px 38px;
+    padding: 24px 38px;
+    padding-bottom: 0;
     border: 1px solid #cdcdcd;
   }
 
@@ -227,7 +241,7 @@
       height: 1px;
       background: #cdcdcd;
       margin: 0 auto;
-      margin-top: 17px;
+      margin-top: 27px;
       width: 100%;
     }
   }
@@ -255,7 +269,7 @@
     background-image: image-set(url("../img/catalog/gift/tablet-cat.png") 1x, url("../img/catalog/gift/tablet-cat@2x.png") 2x);
     background-size: cover;
     background-position: center 60%;
-    opacity: 20%;
+    opacity: 15%;
   }
 
   .additional__gift-content {
@@ -283,8 +297,10 @@
     margin: 0;
     padding: 0;
     z-index: 5;
-    text-align: center;
     color: #ffffff;
+    margin-top: 10px;
+    margin-right: 60px;
+    text-align: left;
   }
 }
 
@@ -295,21 +311,27 @@
     padding-left: 110px;
     padding-right: 110px;
     margin-bottom: 86px;
-    max-width: 1440px;
+    max-width: 1220px;
   }
 
   .additional__list {
     width: 100%;
+    max-width: 900px;
     padding: 16px 0;
     border: none;
     border-top: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
   }
 
+  .additional__title {
+    padding-left: 0;
+  }
+
   .additional__item {
     margin: 0;
     display: flex;
     flex-direction: row;
+    min-height: auto;
   }
 
   .additional__item:not(:last-child) {
@@ -330,21 +352,24 @@
 
   .additional__item-content {
     margin: 0;
+    flex-grow: 1;
   }
 
   .additional__subtitle {
     min-width: 200px;
     max-width: 325px;
     margin: 0;
+    width: 100%;
   }
 
   .additional__description {
     margin: 0;
-    min-width: 200px;
+    min-width: 225px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 20px;
   }
 
   .additional__button {
@@ -352,16 +377,16 @@
     margin-left: auto;
   }
 
-
   .additional__content-and-gift {
     display: flex;
     flex-direction: row;
-    gap: 54px;
+    gap: 79px;
   }
 
   .additional__gift {
     position: relative;
     min-width: 245px;
+    max-width: 245px;
     min-height: 289px;
     width: 280px;
     margin: auto;
@@ -375,7 +400,7 @@
     height: 100%;
     background-image: image-set(url("../img/catalog/gift/desktop-cat.png") 1x, url("../img/catalog/gift/desktop-cat@2x.png") 2x);
     background-size: cover;
-    opacity: 20%;
+    opacity: 15%;
   }
 
   .additional__gift-content {

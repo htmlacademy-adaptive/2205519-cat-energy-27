@@ -1,12 +1,14 @@
 .assortment__wrapper {
   background-color: #ffffff;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .assortment__title {
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 27px;
+  margin-bottom: 48px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -36,13 +38,15 @@
 @media (min-width: $tablet-width) {
   .assortment__wrapper {
     padding: 30px;
+    margin-bottom: 38px;
   }
 
   .assortment__title {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
-    margin-left: 0;
+    margin-top: 21px;
+    margin-left: -20px;
     margin-bottom: 163px;
   }
 
@@ -59,11 +63,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .assortment__title {
+    margin-top: 36px;
+    margin-bottom: 163px;
+  }
+
   .assortment__wrapper {
-    max-width: 1440px;
+    max-width: 1220px;
     margin: 0 auto;
     padding-left: 110px;
     padding-right: 110px;
+    margin-bottom: 45px;
   }
 
   .assortment__list {

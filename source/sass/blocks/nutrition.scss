@@ -17,8 +17,7 @@
 .nutrition {
   cursor: pointer;
   margin: 0;
-  padding: 0;
-  padding-left: 38px;
+  padding: 1px 0 0 35px;
 }
 
 // Это чекбокс кастомный
@@ -62,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .nutrition {
-    padding-left: 60px;
+    padding-left: 50px;
     white-space: nowrap;
   }
 
@@ -74,7 +73,27 @@
   .nutrition__mark {
     width: 40px;
     height: 40px;
-    margin-left: -68px;
+    margin-left: -62px;
+    margin-top: -5px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .nutrition {
+    padding-left: 49px;
+    white-space: nowrap;
+  }
+
+  .nutrition__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nutrition__mark {
+    width: 40px;
+    height: 40px;
+    margin-left: -59px;
     margin-top: -5px;
   }
 }

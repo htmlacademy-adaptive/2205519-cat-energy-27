@@ -73,10 +73,12 @@
   .location__invite {
     width: 100%;
     padding: 56px 70px;
+    min-height: 199px;
   }
 
   .location__invite-list {
     max-width: none;
+    margin-top: 4px;
   }
 
   .location__invite-item {
@@ -90,6 +92,13 @@
 
   .location__invite-contacts {
     font-size: 16px;
+    text-align: right;
+    margin-top: -5px;
+  }
+
+  .location__invite-contacts-mark {
+    display: inline-block;
+    margin-top: 20px;
   }
 
   .location__map {
@@ -130,6 +139,11 @@
     right: 53.12%;
     top: 23.75%;
     bottom: 26.75%;
+  }
+
+  .location__invite-contacts {
+    text-align: left;
+    margin-left: 13px;
   }
 
   .location__map {
