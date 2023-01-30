@@ -14,7 +14,7 @@
   }
 }
 
-.decor:before{
+.decor::before {
   margin-left: calc(-100vw - 32px);
 }
 
@@ -29,9 +29,5 @@
     &::before {
       margin-top: 10px;
     }
-}
-}
-
-@media (min-width: $desktop-width) {
-
+  }
 }

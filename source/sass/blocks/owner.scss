@@ -123,6 +123,15 @@
   transform: translateY(-50%);
 }
 
+@media (max-width: $mobile-width-only) {
+  .owner__title {
+    &::after,
+    &::before {
+      margin-top: -16px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .owner__wrapper {
     padding-left: 70px;

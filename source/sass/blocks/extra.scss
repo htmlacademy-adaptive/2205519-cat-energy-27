@@ -17,7 +17,6 @@
   font-size: 24px;
   line-height: 1.08;
   color: #000000;
-  white-space: nowrap;
   text-align: left;
   position: relative;
 }
@@ -88,7 +87,6 @@
     margin: 0;
     padding-left: 62px;
     margin-bottom: 60px;
-    white-space: nowrap;
     font-weight: 400;
     font-size: 36px;
     line-height: 1;
@@ -141,7 +139,7 @@
     padding-left: 110px;
     padding-right: 110px;
 
-   /* &::before {
+    /* &::before {
       position: absolute;
       left: -45%;
       top: 50%;
@@ -173,11 +171,6 @@
     grid-column-start: 1;
     grid-column-end: 3;
     width: 568px;
-  }
-
-  .extra__item-remark {
-    vertical-align: middle;
-    margin-left: 12px;
   }
 
   .extra__item-remark {
