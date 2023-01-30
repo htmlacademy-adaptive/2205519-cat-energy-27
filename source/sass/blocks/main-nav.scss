@@ -155,7 +155,7 @@
     display: flex;
     justify-content: flex-end;
     min-width: 470px;
-    margin: 0 auto;
+    margin: -5px auto;
   }
 
   .main-nav__list {
@@ -165,10 +165,12 @@
     justify-content: flex-end;
     background: none;
     border: none;
+    margin-top: 1px;
   }
 
   .main-nav__item {
     margin-right: 35px;
+    margin-left: 0;
   }
 
   .main-nav__item:last-child {
@@ -189,7 +191,7 @@
       left: 0;
       height: 2px;
       background: #68b738;
-      margin-top: -20px;
+      margin-top: -18px;
     }
   }
 }
@@ -200,8 +202,12 @@
     margin-left: 12px;
   }
 
-  .main-nav__link {
+  .main-nav__item {
+    margin-right: 33px;
+    margin-left: 2px;
+  }
 
+  .main-nav__link {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -235,7 +241,7 @@
       left: 0;
       height: 2px;
       background: #68b738;
-      margin-top: -20px;
+      margin-top: -17px;
     }
   }
 }

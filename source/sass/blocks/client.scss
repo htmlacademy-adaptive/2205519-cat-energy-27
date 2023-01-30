@@ -171,7 +171,7 @@
     background-color: #ffffff;
     max-width: 1440px;
     margin: 0 auto;
-    margin-bottom: 71px;
+    margin-bottom: 77px;
   }
 
   .client__plus-aim-wrapper {
@@ -182,12 +182,15 @@
   .client__title {
     font-size: 60px;
     line-height: 1;
-    margin-top: 65px;
+    margin-top: 51px;
+    margin-left: -2px;
+    margin-bottom: 54px;
   }
 
   .client__description {
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 62px;
   }
 
   .client__details-wrapper {
@@ -228,7 +231,7 @@
   .client__aim-list {
     width: 100%;
     margin: 0;
-    padding: 25px 28px;
+    padding: 22px 28px;
     list-style-type: none;
     box-sizing: border-box;
     display: flex;
@@ -254,6 +257,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .client__wrapper {
+    margin-bottom: 67px;
+  }
+
   .client__plus-aim-wrapper {
     padding-left: 110px;
     padding-right: 110px;
@@ -262,14 +269,14 @@
   }
 
   .client__title {
-    margin-top: 73px;
+    margin-top: 63px;
     margin-left: 0;
     margin-bottom: 56px;
   }
 
   .client__description {
     margin-left: 0;
-    margin-bottom: 66px;
+    margin-bottom: 63px;
   }
 
   .client__details-wrapper {
@@ -369,7 +376,7 @@
 
 @media (min-width: $tablet-width) {
   .client__aim-label {
-    padding-left: 60px;
+    padding-left: 48px;
     white-space: nowrap;
   }
 
@@ -381,7 +388,7 @@
   .client__aim-mark {
     width: 40px;
     height: 40px;
-    margin-left: -68px;
+    margin-left: -59px;
     margin-top: -5px;
   }
 }

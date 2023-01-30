@@ -1,7 +1,7 @@
 .extra__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 32px;
+  padding-bottom: 34px;
   background-color: #ffffff;
 }
 
@@ -94,13 +94,13 @@
     padding: 0;
     padding-left: 70px;
     padding-right: 70px;
-    margin-bottom: 82px;
+    margin-bottom: 72px;
   }
 
   .extra__title {
     margin: 0;
     padding-left: 70px;
-    margin-bottom: 76px;
+    margin-bottom: 60px;
     white-space: nowrap;
     font-weight: 400;
     font-size: 36px;
@@ -111,13 +111,20 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    column-gap: 64px;
+    gap: 42px;
+    column-gap: 62px;
   }
 
   .extra__button {
     margin: 0;
-    margin-top: 22px;
+    margin-top: 16px;
+    min-height: 52px;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0px;
   }
 
   .extra__remark {
@@ -125,7 +132,7 @@
     line-height: 1;
     text-align: start;
     margin: 0;
-    margin-top: 22px;
+    margin-top: 10px;
     padding: 0;
   }
 }
@@ -135,13 +142,13 @@
     margin: 0 auto;
     padding-left: 110px;
     padding-right: 110px;
-    margin-bottom: 67px;
+    margin-bottom: 82px;
     max-width: 1440px;
   }
 
   .extra__title {
     margin: 0 auto;
-    margin-bottom: 76px;
+    margin-bottom: 62px;
     max-width: 1440px;
     padding-left: 110px;
     padding-right: 110px;
@@ -158,10 +165,16 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 50px;
   }
 
   .extra__item-button {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+
+  .extra__item-remark {
+    vertical-align: middle;
+    margin-left: 12px;
   }
 }

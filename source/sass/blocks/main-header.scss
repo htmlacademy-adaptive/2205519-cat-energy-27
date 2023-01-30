@@ -33,7 +33,11 @@
 
 @media (min-width: $tablet-width) {
   .main-header__logo-image {
-    margin-top: -18px;
+    margin-top: -13px;
+  }
+
+  .main-nav__list {
+    margin-top: 2px;
   }
 
   .main-header__logo-text {
@@ -41,7 +45,7 @@
   }
 
   .main-header__wrapper {
-    padding-left: 30px;
+    padding-left: 11px;
     padding-right: 30px;
   }
 
@@ -54,7 +58,7 @@
   .main-header__wrapper {
     padding-left: 110px;
     padding-right: 110px;
-    padding-top: 30px;
+    padding-top: 46px;
     max-width: 1660px;
     margin: 0 auto;
     box-sizing: border-box;
