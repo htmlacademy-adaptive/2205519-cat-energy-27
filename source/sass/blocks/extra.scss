@@ -3,12 +3,13 @@
   padding-right: 20px;
   padding-bottom: 34px;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .extra__title {
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 34px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -19,20 +20,6 @@
   white-space: nowrap;
   text-align: left;
   position: relative;
-
-  &::after {
-    padding-left: 30px;
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 9999px;
-    height: 2px;
-    left: 0.5em;
-    margin: 0 50% 0 0;
-    vertical-align: middle;
-    background-clip: content-box;
-    border-bottom: 2px solid #68b738;
-  }
 }
 
 .extra__fieldset {
@@ -58,7 +45,7 @@
 }
 
 .extra__button {
-  margin-top: 22px;
+  margin-top: 24px;
   width: 100%;
   min-height: 40px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -78,7 +65,7 @@
 
 .extra__remark {
   margin: 0 auto;
-  margin-top: 9px;
+  margin-top: 1px;
   padding: 0;
   text-align: center;
   font-family: "Lato", "Arial", sans-serif;
@@ -99,7 +86,7 @@
 
   .extra__title {
     margin: 0;
-    padding-left: 70px;
+    padding-left: 62px;
     margin-bottom: 60px;
     white-space: nowrap;
     font-weight: 400;
@@ -143,22 +130,24 @@
     padding-left: 110px;
     padding-right: 110px;
     margin-bottom: 82px;
-    max-width: 1440px;
+    max-width: 1220px;
   }
 
   .extra__title {
     margin: 0 auto;
     margin-bottom: 62px;
-    max-width: 1440px;
+    margin-left: -8px;
+    max-width: 1220px;
     padding-left: 110px;
     padding-right: 110px;
 
-    &::before {
+   /* &::before {
       position: absolute;
       left: -45%;
       top: 50%;
       right: 5em;
     }
+    */
   }
 
   .extra__list {
@@ -168,9 +157,27 @@
     row-gap: 50px;
   }
 
+  .extra__item {
+    margin-right: 18px;
+  }
+
+  .extra__item.extra__item:nth-child(3n) {
+    margin-left: 4px;
+  }
+
+  .extra__item.extra__item:nth-child(4n) {
+    margin-left: 12px;
+  }
+
   .extra__item-button {
     grid-column-start: 1;
     grid-column-end: 3;
+    width: 568px;
+  }
+
+  .extra__item-remark {
+    vertical-align: middle;
+    margin-left: 12px;
   }
 
   .extra__item-remark {

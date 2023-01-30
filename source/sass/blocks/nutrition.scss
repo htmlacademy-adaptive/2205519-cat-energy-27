@@ -61,7 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .nutrition {
-    padding-left: 56px;
+    padding-left: 50px;
     white-space: nowrap;
   }
 
@@ -74,6 +74,26 @@
     width: 40px;
     height: 40px;
     margin-left: -62px;
+    margin-top: -5px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .nutrition {
+    padding-left: 49px;
+    white-space: nowrap;
+  }
+
+  .nutrition__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nutrition__mark {
+    width: 40px;
+    height: 40px;
+    margin-left: -59px;
     margin-top: -5px;
   }
 }
