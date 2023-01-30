@@ -78,6 +78,14 @@
   .main-header__logo-text {
     margin-left: 12px;
   }
+
+  .main-header--index .main-nav__link {
+    color: #ffffff;
+  }
+
+  .main-header--index .main-nav__item--current::after {
+    background-color: #ffffff;
+  }
 }
 
 
