@@ -43,6 +43,7 @@
 
 .example__list-item {
   min-width: 124px;
+  box-sizing: border-box;
 }
 
 .example__list-expenses {
@@ -52,6 +53,9 @@
 
 .example__fieldset-content {
   transform: rotate(180deg);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .example__fieldset-title {
@@ -65,6 +69,9 @@
   text-align: center;
   color: #444444;
   transform: rotate(180deg);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .example__fieldset-content-text {
@@ -95,19 +102,13 @@
 }
 
 .example__cat-slider {
-  width: 280px;
-  height: 256px;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  background-image: url("../img/main-page/example/tablet-slide-before.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Нужно ли мне адаптировать контентные изображения слайдера, если его не получится сделать без js и в ближайшее время он не понадобится?  */
+  display: block;
+  box-sizing: border-box;
 }
 
-.example__cat-slider-button {
-  display: block;
-  margin: auto;
+.example__cat-slider-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -131,11 +132,41 @@
     gap: 32px;
   }
 
+  .example__list-item {
+    min-width: 162px;
+  }
+
   .example__list-expenses {
-    grid-column-start: 3;
-    align-self: center;
-    justify-self: end;
-    width: 250px;
+    display: none;
+  }
+
+  .example__list-cost-info {
+    display: block;
+  }
+
+  .example__content-costs {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+  }
+
+  .example__content-price {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
   }
 
   .example__fieldset-title {
@@ -148,15 +179,9 @@
     line-height: 37px;
   }
 
-  .example__content-expenses {
-    font-size: 20px;
-    line-height: 30px;
-    text-align: right;
-  }
-
-  .example__cat-slider {
-    width: 560px;
-    height: 512px;
+  .example__cat-slider-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -188,27 +213,44 @@
   .example__list {
     grid-template-columns: 1fr 1fr;
     margin: 0;
+    row-gap: 55px;
   }
 
   .example__list-expenses {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    align-self: center;
-    justify-self: start;
-    width: 250px;
+    display: none;
   }
 
-  .example__content-expenses {
-    white-space: nowrap;
+
+  .example__content-costs {
+    text-align: left;
+    margin-bottom: 0;
   }
 
-  .example__cat-slider {
-    position: absolute;
-    width: 560px;
-    height: 512px;
-    left: 55%;
-    top: 0;
+  .example__content-price {
+    display: none;
+  }
+
+  .example__list-price-only {
+    display: block;
+  }
+
+  .example__content-value {
     margin: 0;
-    margin-top: -136px;
+    padding: 0;
+    text-align: center;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .example__cat-slider-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -135px;
+    padding-right: 110px;
   }
 }

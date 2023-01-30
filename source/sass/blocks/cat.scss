@@ -1,4 +1,4 @@
-  .cat-wrapper {
+.cat__wrapper {
   z-index: 1;
   position: relative;
   width: 100%;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-  .cat-background {
+.cat__background {
   position: absolute;
   opacity: 30%;
   width: 100%;
@@ -19,19 +19,19 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .cat-wrapper {
+  .cat__wrapper {
     margin-bottom: 138px;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .cat-wrapper {
+  .cat__wrapper {
     display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .cat-wrapper {
+  .cat__wrapper {
     display: block;
     position: absolute;
     top: 0;
@@ -41,7 +41,7 @@
     background-color: rgba(104, 183, 56, 0.85);
   }
 
-  .cat-background {
+  .cat__background {
     opacity: 50%;
     width: 100%;
     height: 700px;

@@ -25,6 +25,10 @@
   color: #444444;
 }
 
+.textarea:focus {
+  outline: 2px solid #444444;
+}
+
 @media (min-width: $tablet-width) {
   .textarea {
     min-height: 174px;
