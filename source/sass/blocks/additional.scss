@@ -109,7 +109,7 @@
   height: 100%;
   background-image: image-set(url("../img/catalog/gift/mobile-cat.png") 1x, url("../img/catalog/gift/mobile-cat@2x.png") 2x);
   background-size: cover;
-  opacity: 20%;
+  opacity: 15%;
 }
 
 .additional__gift-content {
@@ -206,7 +206,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 
   .additional__description {
@@ -269,7 +269,7 @@
     background-image: image-set(url("../img/catalog/gift/tablet-cat.png") 1x, url("../img/catalog/gift/tablet-cat@2x.png") 2x);
     background-size: cover;
     background-position: center 60%;
-    opacity: 20%;
+    opacity: 15%;
   }
 
   .additional__gift-content {
@@ -298,7 +298,7 @@
     padding: 0;
     z-index: 5;
     color: #ffffff;
-    margin-top: 11px;
+    margin-top: 10px;
     margin-right: 60px;
     text-align: left;
   }
@@ -311,7 +311,7 @@
     padding-left: 110px;
     padding-right: 110px;
     margin-bottom: 86px;
-    max-width: 1440px;
+    max-width: 1220px;
   }
 
   .additional__list {
@@ -352,6 +352,7 @@
 
   .additional__item-content {
     margin: 0;
+    flex-grow: 1;
   }
 
   .additional__subtitle {
@@ -368,6 +369,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 20px;
   }
 
   .additional__button {
@@ -398,7 +400,7 @@
     height: 100%;
     background-image: image-set(url("../img/catalog/gift/desktop-cat.png") 1x, url("../img/catalog/gift/desktop-cat@2x.png") 2x);
     background-size: cover;
-    opacity: 20%;
+    opacity: 15%;
   }
 
   .additional__gift-content {

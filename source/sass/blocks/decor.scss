@@ -1,0 +1,37 @@
+.decor {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 2px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #68b738;
+  }
+}
+
+.decor:before{
+  margin-left: calc(-100vw - 32px);
+}
+
+
+@media (min-width: $tablet-width) {
+  .decor {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &::after,
+    &::before {
+      margin-top: 10px;
+    }
+}
+}
+
+@media (min-width: $desktop-width) {
+
+}
